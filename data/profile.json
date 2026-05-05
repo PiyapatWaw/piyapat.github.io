@@ -1,0 +1,25 @@
+{
+  "name": "Piyapat Wawseengam",
+  "title": "Software Developer",
+  "tagline": "Software Developer with background in Game Design, building web, enterprise, and game systems.",
+  "about": "I am a software developer with a Game Design background and hands-on experience building web applications, logistics integrations, reporting tools, Windows applications, and game systems. I enjoy solving practical problems, structuring maintainable systems, and turning ideas into usable software.",
+  "profileImage": "assets/images/profile.png",
+  "resume": "Piyapat_Resume.pdf",
+  "education": {
+    "university": "Silpakorn University",
+    "degree": "Bachelor of Science, Game Design",
+    "year": "2015-2019",
+    "gpa": "2.87"
+  },
+  "languages": ["Thai (Native)", "English (Intermediate)"],
+  "skills": {
+    "programming": ["C++", "C#", "ASP.NET", "JavaScript", "HTML", "CSS", "SQL"],
+    "development": ["Problem-solving", "OOP", "Debugging", "SOLID", "Firebase", "Version Control"],
+    "tools": ["Unity", "jQuery", "FastReport", "Git", "Windows Apps", "Web Apps"]
+  },
+  "contact": {
+    "email": "Piyapat.waw@outlook.com",
+    "phone": "+66946622561",
+    "linkedin": "in/piyapat-wawseengam-232115235"
+  }
+}

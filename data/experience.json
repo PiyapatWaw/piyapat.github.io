@@ -1,0 +1,59 @@
+[
+  {
+    "company": "KSoftware",
+    "role": "Software Developer (Logistics)",
+    "period": "Mar 2025 - Present",
+    "highlights": [
+      "Built web applications using HTML, CSS, JavaScript, and jQuery.",
+      "Developed logistics integration software connecting import-export businesses with the Thai Customs NSW platform.",
+      "Created custom reports using FastReport based on Thai Customs platform data and user requirements.",
+      "Developed and maintained both Windows applications and Web applications."
+    ]
+  },
+  {
+    "company": "MetaEarn Company Limited",
+    "role": "Game Developer",
+    "period": "Jul 2024 - Jan 2025",
+    "highlights": [
+      "Developed and optimized scalable software solutions.",
+      "Built gamification systems using Multi-Tier Architecture."
+    ]
+  },
+  {
+    "company": "Ring Zero Game Studio",
+    "role": "Game Developer",
+    "period": "Nov 2022 - Jun 2024",
+    "highlights": [
+      "Implemented Ecommerce application on android and iOS platforms integrate with gamification features.",
+      "Designed and implemented RESTful APIs.",
+      "Developed a WebGL-compatible game prototype."
+    ]
+  },
+  {
+    "company": "Skynet 888 Studio",
+    "role": "Game Developer",
+    "period": "Apr 2021 - Oct 2022",
+    "highlights": [
+      "Built an online multiplayer game with P2P architecture.",
+      "Implemented player action payload systems and gameplay features."
+    ]
+  },
+  {
+    "company": "Global Wireless",
+    "role": "Game Developer",
+    "period": "Apr 2020 - Mar 2021",
+    "highlights": [
+      "Developed educational games in mathematics and Thai language.",
+      "Built a question-answering system for gameplay levels."
+    ]
+  },
+  {
+    "company": "X10 Interactive",
+    "role": "Game Developer",
+    "period": "Jun 2019 - Mar 2020",
+    "highlights": [
+      "Designed JSON-based UI handling.",
+      "Improved level design and player engagement."
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "zarina",
+    "title": "Zarina Project",
+    "category": "game",
+    "tags": ["Game", "Unity", "Action"],
+    "year": "20XX",
+    "overview": "A Unity action game project focused on responsive gameplay, character systems, and moment-to-moment combat feel.",
+    "role": "Implemented gameplay logic, tuned interactions, and structured game systems in C#.",
+    "techStack": ["Unity", "C#", "Game Design"],
+    "thumbnail": "assets/images/projects/zarina.png",
+    "gallery": [],
+    "video": ""
+  },
+  {
+    "id": "pandora",
+    "title": "Pandora Project",
+    "category": "game",
+    "tags": ["Game", "Unity", "Prototype"],
+    "year": "20XX",
+    "overview": "A game prototype exploring level flow, player feedback, and flexible mechanics built for fast iteration.",
+    "role": "Designed prototype mechanics and implemented reusable gameplay components.",
+    "techStack": ["Unity", "C#", "Prototype Design"],
+    "thumbnail": "assets/images/projects/pandora.png",
+    "gallery": [],
+    "video": ""
+  },
+  {
+    "id": "sekai",
+    "title": "Sekai Project",
+    "category": "game",
+    "tags": ["Game", "Unity", "Systems"],
+    "year": "20XX",
+    "overview": "A Unity project centered on system design, content flow, and player-facing feature implementation.",
+    "role": "Built gameplay systems and collaborated on translating design ideas into playable features.",
+    "techStack": ["Unity", "C#", "System Design"],
+    "thumbnail": "assets/images/projects/sekai.png",
+    "gallery": [],
+    "video": ""
+  },
+  {
+    "id": "xbattlecars",
+    "title": "X Battle Cars",
+    "category": "game",
+    "tags": ["Game", "Unity", "Vehicle"],
+    "year": "20XX",
+    "overview": "A vehicle combat game project focused on controls, match flow, and satisfying arcade-style interactions.",
+    "role": "Implemented gameplay features and tuned player interaction loops.",
+    "techStack": ["Unity", "C#", "Gameplay Programming"],
+    "thumbnail": "assets/images/projects/xbattlecars.png",
+    "gallery": [],
+    "video": ""
+  },
+  {
+    "id": "portfolio-site",
+    "title": "Portfolio Website",
+    "category": "web",
+    "tags": ["Website", "JavaScript", "GitHub Pages"],
+    "year": "2026",
+    "overview": "A static portfolio website with JSON-driven content, project detail pages, and a responsive interface for GitHub Pages.",
+    "role": "Built the front-end structure, data rendering logic, responsive styling, and project detail routing.",
+    "techStack": ["HTML", "CSS", "JavaScript", "JSON"],
+    "thumbnail": "assets/images/projects/portfolio-site.png",
+    "gallery": [],
+    "video": ""
+  }
+]

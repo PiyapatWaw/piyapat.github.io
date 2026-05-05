@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio website for Piyapat Wawseengam, Software Developer with a background in Game Design.">
+    <title>Piyapat Wawseengam | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Thai:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/main.js"></script>
+  </head>
+  <body data-page="home">
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Piyapat portfolio home">
+        <span class="brand-mark">PW</span>
+        <span>Piyapat</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <h1 id="hero-name">Piyapat Wawseengam</h1>
+          <p class="hero-tagline" id="hero-tagline">Loading portfolio...</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#portfolio">View Work</a>
+            <a class="button ghost" href="Piyapat_Resume.pdf" aria-label="Download CV as PDF">Download CV</a>
+          </div>
+        </div>
+        <aside class="hero-panel reveal" aria-label="Profile summary">
+          <div class="profile-frame">
+            <img id="profile-image" src="assets/images/profile.png" alt="Piyapat Wawseengam portrait">
+            <div class="profile-fallback" aria-hidden="true">PW</div>
+          </div>
+          <div class="hero-stats" id="hero-stats"></div>
+        </aside>
+      </section>
+
+      <section class="content-band" id="about">
+        <div class="section-shell two-column">
+          <div class="section-heading reveal">
+            <h2>About Me</h2>
+          </div>
+          <div class="section-body reveal">
+            <p id="about-text"></p>
+            <div class="info-grid" id="profile-info"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="skills">
+        <div class="section-heading reveal">
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-grid reveal" id="skills-grid"></div>
+      </section>
+
+      <section class="content-band" id="experience">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <h2>Experience</h2>
+          </div>
+          <div class="timeline reveal" id="experience-list"></div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="portfolio">
+        <div class="section-heading reveal">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="portfolio-tabs reveal" role="tablist" aria-label="Portfolio categories">
+          <button class="tab-button active" type="button" data-filter="all">All</button>
+          <button class="tab-button" type="button" data-filter="game">Games</button>
+          <button class="tab-button" type="button" data-filter="web">Web</button>
+        </div>
+        <div class="project-grid reveal" id="project-grid"></div>
+      </section>
+
+      <section class="content-band contact-band" id="contact">
+        <div class="section-shell two-column">
+          <div class="section-heading reveal">
+            <h2>Contact</h2>
+          </div>
+          <div class="contact-list reveal" id="contact-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span id="footer-name">Piyapat Wawseengam</span>
+    </footer>
+  </body>
+</html>
