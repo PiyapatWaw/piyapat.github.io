@@ -1,0 +1,72 @@
+{
+  "role": "Game Programmer for my team thesis project. I wrote the gameplay code for tower assembly, placement interactions, stage UI, scene flow, economy hooks, and pathfinding logic that recalculates enemy routes when the player changes the map.",
+  "techStack": ["Unity", "C#", "Tower Defense", "Custom Tower System", "Pathfinding", "Grid Nodes", "UI", "PC"],
+  "featuredMedia": {
+    "path": "assets/Source/zarina/Icon.png",
+    "fit": "contain"
+  },
+  "gallery": [
+    "assets/Source/zarina/stage 1.JPG",
+    "assets/Source/zarina/stage 2.JPG",
+    "assets/Source/zarina/stage 3.JPG",
+    "assets/Source/zarina/tutorial.JPG"
+  ],
+  "videos": [
+    {
+      "title": "Custom Tower",
+      "path": "https://youtu.be/1PqRqMZfcYQ"
+    },
+    {
+      "title": "Pathfinder",
+      "path": "https://youtu.be/s8Gjw8yAWO0"
+    }
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/PiyapatWaw/ZarinaThesis"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Project Context",
+      "body": "Zarina was my team's Silpakorn Game Design thesis project. The idea I wanted to explore was a tower defense game where the player does more than place fixed towers: they build their own tower from parts, decide what kind of weapons it should carry, and use placement decisions to control how enemies move through the stage."
+    },
+    {
+      "title": "My Responsibility",
+      "body": "My main responsibility was gameplay programming. I connected the custom tower workflow, placement tools, stage UI, scene navigation, resource checks, and enemy route updates so the core idea worked as a playable tower defense loop."
+    },
+    {
+      "title": "Story",
+      "body": "In a futuristic world, an advanced AI satellite named Zarina is created to resolve human conflicts. After observing humanity, Zarina concludes that humans themselves are the cause of those conflicts and takes control of other AIs to attack humanity as a form of correction."
+    },
+    {
+      "title": "Custom Tower System",
+      "body": "The custom tower system lets players choose a core part first, then attach weapons to available weapon slots on that core. Different cores expose different attachment points such as top, left, and right positions, so the selected core directly affects the final tower structure and combat behavior."
+    },
+    {
+      "title": "Placement And Route Blocking",
+      "body": "The placement flow supports both base placement and tower deployment. When a player places a base or blocks a route, the map state changes and the pathing data must be updated so enemies continue moving through a valid route instead of walking through blocked tiles."
+    },
+    {
+      "title": "Pathfinding Challenge",
+      "body": "Pathfinding was the hardest part of the project. I spent roughly half of development time making it reliable because the game depended on enemy movement reacting correctly to player-built obstacles. The implementation uses grid, node, branch, and waypoint scripts to represent connected points, calculate a valid route, and rebuild path data when the player changes the map."
+    },
+    {
+      "title": "Gameplay And UI Flow",
+      "body": "I implemented the play scene interactions that connect mouse input, base placement, tower deployment, tower selection UI, pause/loading states, and stage resources such as money and base count. This made the custom tower feature usable inside the actual stage flow rather than only as an isolated prototype."
+    },
+    {
+      "title": "Level Design Support",
+      "body": "The stages were designed around the player's ability to influence enemy movement. I supported the level flow by making placement rules and path updates work across different maps, so each stage could test the custom tower and route-blocking mechanics in a slightly different way."
+    },
+    {
+      "title": "Code Structure",
+      "body": "The Unity scripts are separated into focused groups: Tower scripts handle cores, weapons, weapon slots, and tower price calculation; Controller scripts handle customization, placement, waves, and camera control; Scene scripts handle play-scene UI and scene transitions; PathFinder scripts handle grid nodes, branches, and waypoints."
+    },
+    {
+      "title": "What I Learned",
+      "body": "This project taught me how quickly a gameplay idea becomes a systems problem. The custom tower mechanic was exciting, but it only worked when UI, placement, economy, enemy movement, and pathfinding all agreed with each other. It was my first large project where debugging system interactions became as important as writing the feature itself."
+    }
+  ]
+}
