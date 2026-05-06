@@ -20,3 +20,13 @@ Desktop.ini
 
 # Local markdown workspace
 markdown/
+
+# Personal documents served from CDN
+Piyapat_Resume.pdf
+*Resume*.pdf
+
+# Project videos are embedded from YouTube, not committed to GitHub
+assets/Source/**/*.mp4
+assets/Source/**/*.mkv
+assets/Source/**/*.webm
+assets/Source/**/*.ogg

@@ -1,0 +1,61 @@
+{
+  "role": "Junior Game Developer on my first professional game project, responsible for Unity UI implementation, simple client-side features, frontend-to-backend API connection, JSON data handling, and stage design support.",
+  "techStack": ["Unity", "C#", "Mobile", "Online Game", "Board Game Systems", "API Integration", "JSON", "UI", "Level Design"],
+  "featuredMedia": {
+    "path": "assets/Source/pandora hunter/Icon.png",
+    "fit": "contain"
+  },
+  "gallery": [
+    "assets/Source/pandora hunter/Icon.png"
+  ],
+  "videos": [
+    {
+      "title": "Pandora Hunter Gameplay",
+      "path": "https://www.youtube.com/embed/-s4Z-wIQGEg"
+    }
+  ],
+  "links": [
+    {
+      "label": "YouTube Gameplay",
+      "url": "https://www.youtube.com/watch?v=-s4Z-wIQGEg"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Game Overview",
+      "body": "Pandora Hunter: The Compass of Treasure is a mobile board game from Extend Interactive, a Thai game studio. The game blends the fast, readable fun of classic board games with strategy systems and Thai cultural references."
+    },
+    {
+      "title": "Core Gameplay",
+      "body": "Players race to reach the treasure chest first, using a compass spin instead of a dice roll to move across the board. The game is not only about speed, because players can encounter monsters, fight other players, and make tactical decisions along the route."
+    },
+    {
+      "title": "Thai Cultural Identity",
+      "body": "The game uses many references from Thai culture, folklore, food, and myth-inspired creatures. This gave the project a distinctive identity while keeping sessions short enough for quick mobile play."
+    },
+    {
+      "title": "My Contribution",
+      "body": "Pandora Hunter was my first professional game project and the first time I worked on an online game. My contribution was scoped and mostly beginner-level work, but it became an important starting point for learning how real game clients connect with backend systems."
+    },
+    {
+      "title": "Online Game Foundation",
+      "body": "This project introduced me to frontend-to-backend communication through APIs and JSON. I learned how a Unity client requests data, receives structured responses, and uses that data inside gameplay and UI workflows."
+    },
+    {
+      "title": "UI Implementation",
+      "body": "I worked on simple UI tasks such as arranging assets in Unity Canvas, creating UI prefabs, wiring screens to data, and making sure the interface followed the intended game flow."
+    },
+    {
+      "title": "API And JSON Work",
+      "body": "I connected client-side UI and gameplay features to backend API responses, then used JSON data to display or update the correct information in the game. These were basic tasks, but they helped me understand how online games are built beyond only local gameplay logic."
+    },
+    {
+      "title": "Level Design",
+      "body": "I also supported level design by creating stage layouts with more variety. Maps used obstacles such as ramps for backward movement, trap tiles for forced relocation, thunderclouds to push players into rocks, and campfires that removed cold while still acting as trap points."
+    },
+    {
+      "title": "What I Learned",
+      "body": "Even though much of my work was simple, Pandora Hunter gave me a strong foundation. It was the project that pushed me from basic Unity implementation into learning APIs, JSON, online game structure, and how to keep improving toward more complex systems later."
+    }
+  ]
+}

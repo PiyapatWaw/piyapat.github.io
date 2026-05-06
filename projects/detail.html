@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Project detail page for Piyapat Wawseengam portfolio.">
+    <meta name="description" content="Project detail page for Piyapat Wawseengam portfolio." id="meta-description">
     <title>Project Detail | Piyapat Wawseengam</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Thai:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/style.css">
-    <script defer src="../assets/main.js"></script>
+    <script type="module" src="../assets/main.js"></script>
   </head>
   <body data-page="detail">
     <div class="cursor" aria-hidden="true"></div>
@@ -18,18 +18,14 @@
     <header class="site-header">
       <a class="brand" href="../index.html" aria-label="Back to portfolio home">
         <span class="brand-mark">PW</span>
-        <span>Piyapat</span>
+        <span id="brand-label">Piyapat</span>
       </a>
-      <nav class="site-nav" aria-label="Project navigation">
-        <a href="../index.html#portfolio">Portfolio</a>
-        <a href="../index.html#experience">Experience</a>
-        <a href="../index.html#contact">Contact</a>
-      </nav>
+      <nav class="site-nav" aria-label="Project navigation" id="detail-nav"></nav>
     </header>
 
     <main id="project-detail">
       <section class="detail-hero section-shell reveal">
-        <a class="back-link" href="../index.html#portfolio">Back to portfolio</a>
+        <a class="back-link" href="../index.html#portfolio" id="detail-back-link">Back to portfolio</a>
         <div class="detail-hero-grid">
           <div>
             <p class="eyebrow" id="detail-category">Project</p>
@@ -44,41 +40,54 @@
       <section class="content-band">
         <div class="section-shell detail-grid">
           <article class="detail-block reveal">
-            <p class="eyebrow">Overview</p>
+            <p class="eyebrow" id="detail-overview-label">Overview</p>
             <p id="detail-overview-body"></p>
           </article>
           <article class="detail-block reveal">
-            <p class="eyebrow">My Role</p>
+            <p class="eyebrow" id="detail-role-label">My Role</p>
             <p id="detail-role"></p>
           </article>
           <article class="detail-block reveal">
-            <p class="eyebrow">Tech Stack</p>
+            <p class="eyebrow" id="detail-tech-label">Tech Stack</p>
             <div class="tag-list" id="detail-tech"></div>
           </article>
         </div>
       </section>
 
+      <section class="section-shell" id="detail-sections-wrap">
+        <div class="section-heading reveal">
+          <p class="eyebrow" id="detail-highlights-label">Highlights</p>
+          <h2 id="detail-highlights-title">Project breakdown.</h2>
+        </div>
+        <div class="detail-sections reveal" id="detail-sections"></div>
+      </section>
+
       <section class="section-shell">
         <div class="section-heading reveal">
-          <p class="eyebrow">Gallery</p>
-          <h2>Project visuals.</h2>
+          <p class="eyebrow" id="detail-gallery-label">Gallery</p>
+          <h2 id="detail-gallery-title">Project visuals.</h2>
         </div>
         <div class="gallery-grid reveal" id="detail-gallery"></div>
       </section>
 
       <section class="content-band" id="detail-video-section">
         <div class="section-shell">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Video</p>
-            <h2>Demo footage.</h2>
+        <div class="section-heading reveal">
+            <p class="eyebrow" id="detail-media-label">Media</p>
+            <h2 id="detail-media-title">Demo footage and files.</h2>
           </div>
-          <div class="video-frame reveal" id="detail-video"></div>
+          <div class="media-stack reveal" id="detail-video"></div>
         </div>
       </section>
 
-      <section class="section-shell next-project-wrap">
-        <a class="next-project reveal" id="next-project" href="../index.html#portfolio"></a>
+      <section class="section-shell" id="detail-links-wrap">
+        <div class="section-heading reveal">
+          <p class="eyebrow" id="detail-links-label">Links</p>
+          <h2 id="detail-links-title">External references.</h2>
+        </div>
+        <div class="link-grid reveal" id="detail-links"></div>
       </section>
+
     </main>
 
     <footer class="site-footer">

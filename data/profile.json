@@ -1,10 +1,10 @@
 {
   "name": "Piyapat Wawseengam",
   "title": "Software Developer",
-  "tagline": "Software Developer with background in Game Design, building web, enterprise, and game systems.",
-  "about": "I am a software developer with a Game Design background and hands-on experience building web applications, logistics integrations, reporting tools, Windows applications, and game systems. I enjoy solving practical problems, structuring maintainable systems, and turning ideas into usable software.",
-  "profileImage": "assets/images/profile.png",
-  "resume": "Piyapat_Resume.pdf",
+  "tagline": "Software Developer with Game Design background, experienced in building business web apps, logistics integrations, and gameplay systems from prototype to playable product.",
+  "about": "I am a software developer with a Game Design background and hands-on experience across business software and game development. In business systems, I build web applications, Windows applications, logistics integrations, and reporting tools using C#, JavaScript, SQL, jQuery, and FastReport. In game projects, I have written gameplay code for tower customization, pathfinding, party selection, turn-based battle flow, dialog systems, UI flow, multiplayer payloads, inventory, quests, and database-connected features. I am strongest when a task needs practical problem solving, debugging, and turning unclear requirements into working systems that people can actually use.",
+  "profileImage": "https://1drv.ms/i/c/7478ebfff8bab9e6/IQRx--nkRiHPQrisaOpeKqKjAS60WBAoqTIxnbn5y_5aUT8",
+  "resume": "https://1drv.ms/b/c/7478ebfff8bab9e6/IQTKM7dnH9_ZQ5zTFrQkuufpAZQXsHXN62fOmi2jFRH7GdU",
   "education": {
     "university": "Silpakorn University",
     "degree": "Bachelor of Science, Game Design",

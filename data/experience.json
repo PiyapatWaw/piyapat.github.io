@@ -34,8 +34,9 @@
     "role": "Game Developer",
     "period": "Apr 2021 - Oct 2022",
     "highlights": [
-      "Built an online multiplayer game with P2P architecture.",
-      "Implemented player action payload systems and gameplay features."
+      "Stabilized Photon PUN2 P2P multiplayer systems for X Battle Cars PVP, improving disconnect, reconnect, and room-state synchronization behavior.",
+      "Built byte serialization workflows to store and synchronize complex gameplay data through Photon Room Data despite PUN2 primitive-data limitations.",
+      "Implemented shared gameplay systems including lobby inventory setup, player car selection, territory capture, skills, buffs, debuffs, team data, and host migration support."
     ]
   },
   {
@@ -43,8 +44,9 @@
     "role": "Game Developer",
     "period": "Apr 2020 - Mar 2021",
     "highlights": [
-      "Developed educational games in mathematics and Thai language.",
-      "Built a question-answering system for gameplay levels."
+      "Developed high-volume educational games for kindergarten through high school learning content, mainly for mathematics and Thai language subjects.",
+      "Built content-loading gameplay structures so a single game format could support multiple grade levels depending on lesson design and uploaded teaching content.",
+      "Practiced requirement analysis, task planning, and workload management while delivering many Unity games across both Android and iOS platforms."
     ]
   },
   {
@@ -52,8 +54,9 @@
     "role": "Game Developer",
     "period": "Jun 2019 - Mar 2020",
     "highlights": [
-      "Designed JSON-based UI handling.",
-      "Improved level design and player engagement."
+      "Started my professional game development career on Pandora Hunter, a Thai-inspired mobile board game built with Unity.",
+      "Implemented Unity UI screens and simple client-side features while learning frontend-to-backend communication through APIs and JSON.",
+      "Supported stage design with varied board layouts, obstacle patterns, traps, and short-session mobile gameplay pacing."
     ]
   }
 ]

@@ -1,0 +1,83 @@
+{
+  "role": "Unity Developer responsible for Photon PUN2 P2P networking, room data synchronization, reconnect handling, host migration support, byte payload conversion, and shared gameplay systems such as skills, buffs, inventory, car selection, teams, and quests.",
+  "techStack": ["Unity", "C#", "Photon PUN2", "P2P Networking", "Room Data", "Byte Serialization", "JSON", "Database", "Steam"],
+  "featuredMedia": {
+    "path": "assets/Source/v8/xbattlecars-icon.png",
+    "fit": "contain"
+  },
+  "gallery": [
+    "assets/Source/v8/xbattlecars-gameplay-01.jpg",
+    "assets/Source/v8/xbattlecars-gameplay-02.jpg",
+    "assets/Source/v8/xbattlecars-gameplay-03.jpg"
+  ],
+  "videos": [
+    {
+      "title": "Team",
+      "path": "https://youtu.be/uPK_n2x9UXY"
+    },
+    {
+      "title": "Skill",
+      "path": "https://youtu.be/8Q_VcvteDMg"
+    },
+    {
+      "title": "Item",
+      "path": "https://youtu.be/iiZvUKJnHGM"
+    },
+    {
+      "title": "Color Change",
+      "path": "https://youtu.be/S3qSZyOa7Qc"
+    }
+  ],
+  "links": [
+    {
+      "label": "Steam",
+      "url": "https://store.steampowered.com/app/2311310/XBattleCarsPVP/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Project Context",
+      "body": "X Battle Cars PVP is an online P2P vehicle combat game built with Photon PUN2. When I joined the project, the game had several network stability problems, including player disconnects, reconnect issues, and data not staying synchronized between players."
+    },
+    {
+      "title": "Network Problem",
+      "body": "Most of the sync problems could be improved by storing gameplay state in Photon room data, but PUN2 room data does not directly support complex custom classes. It mainly works well with primitive values and Unity-supported basic data, which became a limitation for systems like car setup, inventory, skills, buffs, and match state."
+    },
+    {
+      "title": "Byte Payload Solution",
+      "body": "My solution was to convert the complex data the game needed into byte payloads, store or send that payload through the network, and then convert it back into the correct gameplay class on the receiving side. This made complex synchronized data more reliable and reduced errors caused by unsupported data shapes."
+    },
+    {
+      "title": "Gameplay Systems Enabled",
+      "body": "The payload system made more varied gameplay possible, including territory capture mode, skill usage, buff and debuff effects, per-player inventory setup from the lobby, and allowing each player to select the car they wanted to bring into the match from their own lobby data."
+    },
+    {
+      "title": "Lobby And Inventory",
+      "body": "I worked on inventory and lobby-connected setup so players could prepare items before the match, bring those item selections into gameplay, and keep each player's selected car and equipment synchronized correctly across the room."
+    },
+    {
+      "title": "Skills, Buffs, And Debuffs",
+      "body": "Each car could use gameplay systems such as skills, buffs, and debuffs. These systems needed consistent shared state across players, so the network payload had to preserve enough data for effects, cooldowns, usage state, and target behavior to match for every participant."
+    },
+    {
+      "title": "P2P Challenge",
+      "body": "The hardest part of this project was the decision to use P2P networking without a central authoritative server. The match had to trust the host, so if the host had a slow connection or disconnected, many problems could appear in a MOBA-survival style game where several gameplay systems depend on shared state."
+    },
+    {
+      "title": "Host Migration",
+      "body": "To reduce the impact of host disconnects, the game needed a host migration approach. When the host dropped, responsibility had to move to another player so the room could continue instead of losing critical gameplay state."
+    },
+    {
+      "title": "Appearance And Team Data",
+      "body": "I also worked with car appearance, weapon customization, and team data so all players could see the selected cars, colors, weapons, and team setup consistently during multiplayer sessions."
+    },
+    {
+      "title": "Quest And Database Updates",
+      "body": "Quest progress and reward display needed to be updated from gameplay actions and connected back to stored player data. This required converting data between gameplay payloads, JSON, and database-friendly structures."
+    },
+    {
+      "title": "What I Learned",
+      "body": "This project taught me that multiplayer gameplay is not only about sending data, but deciding what data should be trusted, where it should live, how it should recover after disconnects, and how to keep gameplay systems stable when the network is unreliable."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+Sekai O Sukuu
+Unity Developer
+
+ 
+
+Game Jam 2021
+
+ 
+
+Platform : Window
+
+Responsibilities
+
+• Managed scene flow.
+• Designed character classes.
+• Calculated damage mechanics.
+• Developed the storyline system.
+
+
+Git
+https://github.com/PiyapatWaw/SekaiOSukuu
+

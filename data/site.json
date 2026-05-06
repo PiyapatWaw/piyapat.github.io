@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "Piyapat Wawseengam | Software Developer",
+    "description": "Portfolio website for Piyapat Wawseengam, Software Developer with a background in Game Design."
+  },
+  "navigation": {
+    "brand": "Piyapat",
+    "homeAriaLabel": "Piyapat portfolio home",
+    "mainAriaLabel": "Main navigation",
+    "detailAriaLabel": "Project navigation",
+    "items": [
+      { "href": "#about", "label": "About" },
+      { "href": "#skills", "label": "Skills" },
+      { "href": "#experience", "label": "Experience" },
+      { "href": "#portfolio", "label": "Portfolio" },
+      { "href": "#contact", "label": "Contact" }
+    ]
+  },
+  "home": {
+    "ctaPrimary": "View Work",
+    "ctaSecondary": "Download CV",
+    "sections": {
+      "about": "About Me",
+      "skills": "Skills",
+      "experience": "Experience",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "portfolioFilters": {
+      "all": "All",
+      "game": "Games",
+      "web": "Web"
+    }
+  },
+  "detail": {
+    "backLabel": "Back to portfolio",
+    "headings": {
+      "overview": "Overview",
+      "role": "My Role",
+      "techStack": "Tech Stack",
+      "highlights": "Highlights",
+      "highlightsTitle": "Project breakdown.",
+      "gallery": "Gallery",
+      "galleryTitle": "Project visuals.",
+      "media": "Media",
+      "mediaTitle": "Demo footage and files.",
+      "links": "Links",
+      "linksTitle": "External references."
+    }
+  },
+  "mediaSizing": {
+    "projectCardAspectRatio": "16 / 10",
+    "detailHeroMinHeight": "360px",
+    "galleryAspectRatio": "16 / 10",
+    "profileImagePosition": "38% 16%"
+  }
+}

@@ -3,65 +3,48 @@
     "id": "zarina",
     "title": "Zarina Project",
     "category": "game",
-    "tags": ["Game", "Unity", "Action"],
-    "year": "20XX",
-    "overview": "A Unity action game project focused on responsive gameplay, character systems, and moment-to-moment combat feel.",
-    "role": "Implemented gameplay logic, tuned interactions, and structured game systems in C#.",
-    "techStack": ["Unity", "C#", "Game Design"],
-    "thumbnail": "assets/images/projects/zarina.png",
-    "gallery": [],
-    "video": ""
+    "tags": ["Game", "Unity", "PC", "Thesis", "Tower Defense"],
+    "year": "2018-2019",
+    "overview": "A Silpakorn Game Design thesis tower defense project where I programmed custom tower assembly, base and tower placement, stage flow, and dynamic pathfinding that reacts when players reshape enemy routes.",
+    "thumbnail": "assets/Source/zarina/Icon.png",
+    "mediaSizing": {
+      "thumbnailFit": "contain",
+      "thumbnailPadding": "0.7rem"
+    },
+    "detailFile": "projects/zarina.json"
   },
   {
-    "id": "pandora",
-    "title": "Pandora Project",
+    "id": "pandora-hunter",
+    "title": "Pandora Hunter",
     "category": "game",
-    "tags": ["Game", "Unity", "Prototype"],
-    "year": "20XX",
-    "overview": "A game prototype exploring level flow, player feedback, and flexible mechanics built for fast iteration.",
-    "role": "Designed prototype mechanics and implemented reusable gameplay components.",
-    "techStack": ["Unity", "C#", "Prototype Design"],
-    "thumbnail": "assets/images/projects/pandora.png",
-    "gallery": [],
-    "video": ""
+    "tags": ["Game", "Unity", "Mobile", "Board Game", "API"],
+    "year": "2019-2020",
+    "overview": "A Thai-inspired mobile board game and my first professional online game project, where I supported Unity UI, API integration, JSON data handling, and varied stage design.",
+    "thumbnail": "assets/Source/pandora hunter/Icon.png",
+    "detailFile": "projects/pandora-hunter.json"
   },
   {
-    "id": "sekai",
-    "title": "Sekai Project",
+    "id": "sekai-o-sukuu",
+    "title": "Sekai O Sukuu",
     "category": "game",
-    "tags": ["Game", "Unity", "Systems"],
-    "year": "20XX",
-    "overview": "A Unity project centered on system design, content flow, and player-facing feature implementation.",
-    "role": "Built gameplay systems and collaborated on translating design ideas into playable features.",
-    "techStack": ["Unity", "C#", "System Design"],
-    "thumbnail": "assets/images/projects/sekai.png",
-    "gallery": [],
-    "video": ""
+    "tags": ["Game Jam", "Unity", "Windows", "Turn-Based", "Story"],
+    "year": "2021",
+    "overview": "A remote game jam turn-based party RPG created during the COVID period, where I programmed dialog flow, party selection, battle state, damage actions, enemy turns, and scene transitions.",
+    "thumbnail": "assets/Source/sekai o sukuu/Icon.png",
+    "detailFile": "projects/sekai-o-sukuu.json"
   },
   {
-    "id": "xbattlecars",
-    "title": "X Battle Cars",
+    "id": "xbattlecars-pvp",
+    "title": "X Battle Cars PVP",
     "category": "game",
-    "tags": ["Game", "Unity", "Vehicle"],
-    "year": "20XX",
-    "overview": "A vehicle combat game project focused on controls, match flow, and satisfying arcade-style interactions.",
-    "role": "Implemented gameplay features and tuned player interaction loops.",
-    "techStack": ["Unity", "C#", "Gameplay Programming"],
-    "thumbnail": "assets/images/projects/xbattlecars.png",
-    "gallery": [],
-    "video": ""
-  },
-  {
-    "id": "portfolio-site",
-    "title": "Portfolio Website",
-    "category": "web",
-    "tags": ["Website", "JavaScript", "GitHub Pages"],
-    "year": "2026",
-    "overview": "A static portfolio website with JSON-driven content, project detail pages, and a responsive interface for GitHub Pages.",
-    "role": "Built the front-end structure, data rendering logic, responsive styling, and project detail routing.",
-    "techStack": ["HTML", "CSS", "JavaScript", "JSON"],
-    "thumbnail": "assets/images/projects/portfolio-site.png",
-    "gallery": [],
-    "video": ""
+    "tags": ["Game", "Unity", "Steam", "Photon PUN2", "P2P"],
+    "year": "2021-2022",
+    "overview": "Online P2P vehicle combat game using Photon PUN2, focused on stabilizing room data sync, reconnect behavior, host migration, inventory, skills, buffs, and player car selection.",
+    "thumbnail": "assets/Source/v8/xbattlecars-icon.png",
+    "mediaSizing": {
+      "thumbnailFit": "contain",
+      "thumbnailPadding": "0.45rem"
+    },
+    "detailFile": "projects/xbattlecars-pvp.json"
   }
 ]

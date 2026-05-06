@@ -1,0 +1,63 @@
+{
+  "role": "Unity Developer for a remote game jam project. I wrote the gameplay-side code for dialog progression, party selection, character classes, damage calculation, battle state flow, player action UI, enemy turns, HP updates, and the connection between story scenes and combat scenes.",
+  "techStack": ["Unity", "C#", "Turn-Based Combat", "Narrative Systems", "Dialog System", "Character Classes", "Damage Calculation", "UI Flow"],
+  "featuredMedia": {
+    "path": "assets/Source/sekai o sukuu/Icon.png",
+    "fit": "contain"
+  },
+  "gallery": [
+    "assets/Source/sekai o sukuu/Battle.png",
+    "assets/Source/sekai o sukuu/CutScene.png",
+    "assets/Source/sekai o sukuu/Select.JPG",
+    "assets/Source/sekai o sukuu/Credit.JPG"
+  ],
+  "videos": [],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/PiyapatWaw/SekaiOSukuu"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Game Jam Context",
+      "body": "Sekai O Sukuu was made during the COVID period when online game jams were becoming more common. I joined a remote group and worked under a short deadline, so the main goal was to turn the concept into a playable flow rather than polishing every narrative and combat detail."
+    },
+    {
+      "title": "Concept",
+      "body": "The game was designed around childhood fears. We imagined a turn-based party fighting game where the party represents friendship and unity, while the monsters represent personal fears that each character must face. The battle system was meant to support that theme through party-based combat."
+    },
+    {
+      "title": "My Responsibility",
+      "body": "My responsibility was to make the playable structure work under the game jam deadline. I managed scene flow, built the storyline/dialog system, designed character classes, calculated damage mechanics, and connected party selection into the battle scene."
+    },
+    {
+      "title": "Dialog And Story Flow",
+      "body": "I built a dialog sequence system that reads dialog data, swaps portraits and backgrounds, advances text on player input, stores dialog progress, and moves to the next scene when the sequence is complete. This connected the story scenes to the playable parts of the game."
+    },
+    {
+      "title": "Party Selection",
+      "body": "Before combat, players select a party of three characters. The selection flow stores the chosen character IDs, validates that exactly three characters are selected, and passes that party setup into the battle scene through saved state."
+    },
+    {
+      "title": "Turn-Based Battle System",
+      "body": "The battle system manages player and enemy turns, party HP, enemy HP, target selection, action execution, turn countdown, and win/lose checks. Character classes define the combat data, while queued action data drives attacks, buffs, guard actions, healing, and damage calculation."
+    },
+    {
+      "title": "Battle UI",
+      "body": "I implemented the battle input UI where the player chooses a party member, sees available actions, previews action descriptions, confirms the action, and then returns to the party selection panel. The UI also includes turn feedback and animation transitions using tweening."
+    },
+    {
+      "title": "Code Structure",
+      "body": "The code is organized into gameplay layers: Game scripts define characters, players, enemies, attacks, buffs, guards, heals, pooling, and action data; System scripts manage state flow, battle updates, character selection, menu, credits, and UI; Dialog scripts manage narrative sequence data."
+    },
+    {
+      "title": "Main Challenge",
+      "body": "The biggest challenge was finishing the whole loop within the game jam deadline. We completed the visible UI flow and battle foundation, but the final boss battle did not fully create the emotional connection to the story as strongly as we originally planned."
+    },
+    {
+      "title": "What I Learned",
+      "body": "This project taught me how to scope a playable vertical slice under time pressure. Even when not every narrative idea could be fully expressed, building the dialog flow, party setup, and battle loop gave the team a complete structure that could be played from story into combat."
+    }
+  ]
+}
