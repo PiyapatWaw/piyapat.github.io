@@ -4,10 +4,9 @@
     "role": "Software Developer (Logistics)",
     "period": "Mar 2025 - Present",
     "highlights": [
-      "Built web applications using HTML, CSS, JavaScript, and jQuery.",
-      "Developed logistics integration software connecting import-export businesses with the Thai Customs NSW platform.",
-      "Created custom reports using FastReport based on Thai Customs platform data and user requirements.",
-      "Developed and maintained both Windows applications and Web applications."
+      "Developed logistics document systems connected to the Thai Customs NSW platform.",
+      "Worked across both Windows applications and web applications, taking responsibility for new features, bug fixes, long-term maintenance, and custom reporting.",
+      "Handled pentest-related fixes and optimized the document preview flow to improve speed and overall usability."
     ]
   },
   {
@@ -15,8 +14,9 @@
     "role": "Game Developer",
     "period": "Jul 2024 - Jan 2025",
     "highlights": [
-      "Developed and optimized scalable software solutions.",
-      "Built gamification systems using Multi-Tier Architecture."
+      "Developed gamification features for Smyleland, focusing mainly on UI-driven game systems and user-facing interaction flows.",
+      "Implemented deeplink and third-party login features to support smoother user entry points and account connection flows.",
+      "Built season pass system features for progression, rewards, and repeat engagement."
     ]
   },
   {
@@ -24,9 +24,9 @@
     "role": "Game Developer",
     "period": "Nov 2022 - Jun 2024",
     "highlights": [
-      "Implemented Ecommerce application on android and iOS platforms integrate with gamification features.",
-      "Designed and implemented RESTful APIs.",
-      "Developed a WebGL-compatible game prototype."
+      "Worked on an ecommerce application with integrated gamification, taking responsibility across both Android/iOS app features and connected game systems.",
+      "Helped move the game experience toward WebGL once the gameplay became more defined, reducing repeated mobile asset downloads and making access easier for users.",
+      "Worked closely with backend developers to connect the full user flow through API-driven async/await structures across app, game, and reward systems."
     ]
   },
   {
