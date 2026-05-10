@@ -46,5 +46,19 @@
       "thumbnailPadding": "0.45rem"
     },
     "detailFile": "projects/xbattlecars-pvp.json"
+  },
+  {
+    "id": "the-story-promayan",
+    "title": "The Story Promayan",
+    "category": "web",
+    "tags": ["Web", "HTML", "Tailwind CSS", "JavaScript", "JSON", "GitHub Actions", "Cloudflare Pages", "AI-assisted Development"],
+    "year": "2026",
+    "overview": "Static landing page for a fortune telling service, built with JSON-driven content, AI-assisted development, GitHub Actions, and Cloudflare Pages deployment.",
+    "thumbnail": "assets/Source/TheStory/brand-logo-transparent.png",
+    "mediaSizing": {
+      "thumbnailFit": "contain",
+      "thumbnailPadding": "0.55rem"
+    },
+    "detailFile": "projects/the-story-promayan.json"
   }
 ]

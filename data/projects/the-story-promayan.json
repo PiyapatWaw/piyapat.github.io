@@ -1,0 +1,50 @@
+{
+  "role": "Frontend developer responsible for the site architecture, JSON-driven content flow, reusable ES module structure, UI styling, automated validation flow, and GitHub Actions to Cloudflare Pages deployment workflow. I also used AI assistance during development and refactoring to improve speed, structure, and validation coverage.",
+  "techStack": ["HTML", "Tailwind CSS CLI", "JavaScript ES Modules", "JSON", "GitHub Actions", "Cloudflare Pages", "AI-assisted Development"],
+  "featuredMedia": {
+    "path": "assets/Source/TheStory/brand-logo-transparent.png",
+    "fit": "contain"
+  },
+  "gallery": [],
+  "videos": [],
+  "links": [
+    {
+      "label": "Live Site",
+      "url": "https://thestorypromayarn.pages.dev/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Project Context",
+      "body": "The Story Promayan is a static landing page for a fortune telling service. The goal was to make the site fast, mobile-first, easy to maintain, and suitable for frequent non-technical content updates such as pricing, reviews, service descriptions, FAQs, and social links."
+    },
+    {
+      "title": "JSON-Driven Content",
+      "body": "Repeated content is not hardcoded into the HTML. The page reads structured JSON files for pricing, services, reviews, social links, site copy, and FAQs, then renders the related UI sections dynamically with vanilla JavaScript modules. This makes common updates possible by editing only content files."
+    },
+    {
+      "title": "Architecture",
+      "body": "The frontend follows an MVC-inspired static-site structure. JSON files act as the model, index.html provides the page shell and section containers, and JavaScript modules load content, render sections, assign social links, mount FAQ content, and attach interactions."
+    },
+    {
+      "title": "OOP And Single Responsibility",
+      "body": "The JavaScript uses focused ES module classes instead of one large procedural script. ContentRepository handles JSON loading, CardFactory defines a reusable card structure, and ReviewCarousel owns carousel scrolling, arrow state, and resize behavior."
+    },
+    {
+      "title": "UI And Styling",
+      "body": "The visual direction uses a pastel mystic watercolor and space theme with dark cosmic gradients, soft stars, translucent glass cards, and brand-specific CTA button styles for LINE and Facebook. Shared card layout rules keep buttons and badges aligned even when content length changes."
+    },
+    {
+      "title": "Testing Strategy",
+      "body": "The project includes automated validation and rendering checks for the highest-risk static-site behaviors. These checks help catch broken content structures, missing links, and layout issues before release."
+    },
+    {
+      "title": "Deployment Flow",
+      "body": "The deployment workflow uses GitHub Actions and Cloudflare Pages. Commits to main or test run automated checks, the tested flow promotes passing work toward the release branch, and Cloudflare Pages deploys the static site from release."
+    },
+    {
+      "title": "Key Outcomes",
+      "body": "The project delivered a low-cost static website with no backend dependency, easier content maintenance through JSON files, reusable frontend modules, AI-assisted development support, and a repeatable release workflow."
+    }
+  ]
+}

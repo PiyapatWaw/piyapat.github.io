@@ -74,10 +74,22 @@ export class ProjectDetailRenderer {
   }
 
   renderGallery(project) {
+    const wrap = document.getElementById("detail-gallery-wrap");
     const gallery = document.getElementById("detail-gallery");
-    if (!gallery) return;
+    if (!wrap || !gallery) return;
 
-    const images = project.gallery && project.gallery.length ? project.gallery : [project.thumbnail];
+    const hasExplicitGallery = Array.isArray(project.gallery);
+    const images = hasExplicitGallery
+      ? project.gallery
+      : project.thumbnail ? [project.thumbnail] : [];
+
+    if (!images.length) {
+      wrap.classList.add("is-hidden");
+      return;
+    }
+
+    wrap.classList.remove("is-hidden");
+
     gallery.innerHTML = images.map((image, index) => `
       <div class="gallery-item media-loading">
         <img

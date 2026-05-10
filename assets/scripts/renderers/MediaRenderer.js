@@ -8,6 +8,7 @@ export class MediaRenderer {
   renderProjectMedia(project, { large = false } = {}) {
     const mediaStyle = this.buildMediaStyle(project, large);
     const detailFallbackFit = project.mediaSizing?.detailFit || project.mediaSizing?.thumbnailFit || "contain";
+    const thumbnailPath = this.assetUrlService.assetPath(project.thumbnail);
     let fitClass = "";
 
     if (large && detailFallbackFit === "contain") {
@@ -17,9 +18,14 @@ export class MediaRenderer {
     }
 
     const loading = large ? "eager" : "lazy";
+    const stateClass = thumbnailPath ? "media-loading" : "media-error";
+    const imageMarkup = thumbnailPath
+      ? `<img class="media-image" src="${thumbnailPath}" alt="${escapeAttribute(project.title)} thumbnail" loading="${loading}" decoding="async">`
+      : "";
+
     return `
-      <div class="project-media ${large ? "large" : ""} ${fitClass} media-loading"${mediaStyle}>
-        <img class="media-image" src="${this.assetUrlService.assetPath(project.thumbnail)}" alt="${escapeAttribute(project.title)} thumbnail" loading="${loading}" decoding="async">
+      <div class="project-media ${large ? "large" : ""} ${fitClass} ${stateClass}"${mediaStyle}>
+        ${imageMarkup}
         <div class="media-placeholder" aria-hidden="true">
           <span>${escapeHtml(project.title)}</span>
         </div>
