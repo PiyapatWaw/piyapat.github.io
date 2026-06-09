@@ -1,5 +1,7 @@
 # Piyapat Portfolio Website
 
+Live site: [https://piyapatwaw.github.io/piyapat.github.io/](https://piyapatwaw.github.io/piyapat.github.io/)
+
 Static portfolio website for Piyapat Wawseengam, built with plain HTML, CSS, JavaScript, and JSON for deployment on GitHub Pages.
 
 ## Stack
@@ -80,7 +82,7 @@ Update styling and layout:
 
 Expected URL:
 
-- `https://piyapatwaw.github.io/`
+- `https://piyapatwaw.github.io/piyapat.github.io/`
 
 ## Notes
 
