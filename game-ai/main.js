@@ -16,12 +16,43 @@ document.addEventListener("DOMContentLoaded", () => start().catch(renderError));
 
 async function start() {
   const config = await gameData.loadJson("resume.json");
-  if (document.body.dataset.page === "detail") {
+  if (document.body.dataset.page === "research-prototype") {
+    await renderResearchPrototype();
+  } else if (document.body.dataset.page === "detail") {
     await renderProjectPage(config);
   } else {
     await renderHomePage(config);
   }
   reveal.setup();
+}
+
+async function renderResearchPrototype() {
+  const prototype = await gameData.loadJson("research-prototype.json");
+  document.title = `${prototype.title} | Piyapat Wawseengam`;
+  document.querySelector('meta[name="description"]').setAttribute("content", prototype.summary);
+  document.getElementById("research-nav").innerHTML = '<a href="./">Game & AI Home</a><a href="./#research">Research Interests</a>';
+
+  const list = (items) => `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+  const cardGrid = (items) => `<div class="research-prototype-grid">${items.map((item) => `<article class="research-prototype-card"><h3>${escapeHtml(item.title)}</h3>${item.body ? `<p>${escapeHtml(item.body)}</p>` : ""}${item.items ? list(item.items) : ""}</article>`).join("")}</div>`;
+  const renderSections = (sections) => sections.map((section) => `<section class="content-band research-prototype-section"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">${escapeHtml(section.label || "Proposed concept")}</p><h2>${escapeHtml(section.title)}</h2></div><div class="research-prototype-copy reveal">${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}${section.items ? list(section.items) : ""}</div>${section.cards ? cardGrid(section.cards) : ""}</div></section>`).join("");
+  const conceptSections = renderSections(prototype.sections.slice(0, 3));
+  const systemSections = renderSections(prototype.sections.slice(3));
+
+  document.getElementById("research-prototype").innerHTML = `
+    <section class="detail-hero section-shell reveal research-prototype-hero">
+      <a class="back-link" href="./#research">Back to Game &amp; AI research overview</a>
+      <p class="eyebrow">${escapeHtml(prototype.label)}</p>
+      <h1>${escapeHtml(prototype.title)}</h1>
+      <p class="hero-tagline">${escapeHtml(prototype.summary)}</p>
+      <p class="research-supporting-statement">${escapeHtml(prototype.statusNote)}</p>
+    </section>
+    ${conceptSections}
+    <section class="section-shell research-prototype-section"><div class="section-heading reveal"><p class="eyebrow">Proposed hybrid architecture</p><h2>From gameplay experience to a playable candidate.</h2></div><div class="pipeline-flow reveal research-prototype-flow">${prototype.architecture.map((step, index) => `<span class="flow-step">${escapeHtml(step)}</span>${index < prototype.architecture.length - 1 ? '<span class="flow-arrow" aria-hidden="true">→</span>' : ""}`).join("")}</div></section>
+    ${systemSections}
+    <section class="content-band research-prototype-section"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">Research questions</p><h2>Questions the prototype could explore.</h2></div><div class="research-prototype-grid reveal">${prototype.researchQuestions.map((question, index) => `<article class="research-prototype-card"><p class="eyebrow">RQ${index + 1}</p><p>${escapeHtml(question)}</p></article>`).join("")}</div></div></section>
+    <section class="section-shell research-prototype-section"><div class="section-heading reveal"><p class="eyebrow">Proposed comparison</p><h2>Three system configurations.</h2></div>${cardGrid(prototype.comparison)}<div class="research-prototype-copy reveal"><p>${escapeHtml(prototype.comparisonNote)}</p></div></section>
+    <section class="content-band research-prototype-section"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">Prototype scope</p><h2>A focused experimental environment.</h2></div>${cardGrid(prototype.scope)}</div></section>
+    <section class="section-shell research-prototype-section"><div class="section-heading reveal"><p class="eyebrow">Future directions</p><h2>Extensions to explore later.</h2></div>${cardGrid(prototype.futureDirections)}<blockquote class="research-principle reveal">${escapeHtml(prototype.principle)}</blockquote></section>`;
 }
 
 async function loadProjects(config) {

@@ -1,0 +1,96 @@
+{
+  "label": "Proposed research concept",
+  "title": "Generative Class & Skill System for Fantasy RPG",
+  "summary": "A proposed Fantasy RPG prototype in which character classes and skills could emerge from gameplay experience while remaining inside explicit game rules and designer-defined constraints.",
+  "statusNote": "This page describes a proposed research concept and prototype direction. It does not report a completed implementation, experiment, or research result.",
+  "sections": [
+    {
+      "label": "Concept",
+      "title": "Character growth shaped by experience.",
+      "paragraphs": [
+        "The proposed Fantasy RPG concept explores character progression beyond a fully predetermined level-and-skill-tree structure. A player could begin with a base class such as Warrior, Mage, Archer, or Cleric and a small set of starting skills.",
+        "Combat behaviour, encountered enemies, weapons, practiced skills, survival situations, and player decisions could contribute to a structured experience profile. A hybrid system could then propose new skill or class candidates that reflect how the character has been played."
+      ]
+    },
+    {
+      "label": "Illustrative player experience",
+      "title": "From behaviour to a skill candidate.",
+      "paragraphs": ["For example, a Warrior who frequently blocks attacks, protects party members, encounters fire damage, survives difficult fights, and follows guard events with counter attacks could develop an experience profile around defensive counterplay."],
+      "cards": [
+        { "title": "Observed signals", "items": ["Block events and perfect guards", "Damage prevented for allies", "Fire damage received", "Counter actions after guards"] },
+        { "title": "Possible candidate", "body": "Flameguard Counter: a defensive counter skill that could convert absorbed fire damage into a conditional retaliatory attack." },
+        { "title": "Design intent", "body": "The candidate is proposed from play history rather than selected directly from a fixed skill tree." }
+      ]
+    },
+    {
+      "label": "Class evolution",
+      "title": "Possible class directions from playstyle.",
+      "paragraphs": ["The same idea could extend to class candidates. A Warrior who repeatedly combines sword use, fire magic, rapid movement, and hybrid sword-fire skills could be offered a direction such as Flame Blade or Arcane Swordsman. Different players starting from the same base class could therefore explore different growth paths."],
+      "cards": [
+        { "title": "Example: Flame Blade", "items": ["Warrior base class", "Sword mastery", "Fire magic", "Repeated dash-oriented combat"] },
+        { "title": "Example: Frost Guardian", "items": ["Mage base class", "Ice magic", "Barrier skills", "Party-protection experience"] },
+        { "title": "Unique class direction", "body": "Rare combinations of crafting, weapons, armour, and combat behaviour could later support distinctive class candidates such as a Battle Forgemaster." }
+      ]
+    },
+    {
+      "label": "Experience representation",
+      "title": "Structured signals instead of raw narrative.",
+      "paragraphs": ["Player experience would not need to be sent to an AI as unrestricted prose. The proposed system would represent it as structured gameplay data that can describe a character's recent playstyle."],
+      "cards": [
+        { "title": "Combat", "items": ["Weapon use", "Damage type", "Enemy type", "Critical hits", "Dodge, block, counter", "Distance, combo, damage dealt and taken"] },
+        { "title": "Exploration and magic", "items": ["Distance travelled", "Environment and weather", "Hidden areas and treasure", "Element use and combinations", "Mana use and spell range"] },
+        { "title": "Social and party play", "items": ["Healing and protecting allies", "Buffing and reviving", "Solo or party play"] }
+      ]
+    },
+    {
+      "label": "Skill representation",
+      "title": "Reusable components for controllable generation.",
+      "paragraphs": ["Each skill could be represented as structured data instead of relying only on bespoke code. This would let a generator assemble candidates from components that the game system already understands."],
+      "cards": [
+        { "title": "Core skill fields", "items": ["Type, weapon requirement, element, target", "Range, area, damage, hit count", "Movement, resource cost, cooldown", "Status effect and activation conditions"] },
+        { "title": "Illustrative candidate", "body": "Crimson Flash could combine a forward dash, sword attack, fire element, burn status, and a distance-based critical condition." },
+        { "title": "Structured output", "body": "A candidate would be expressed as a skill definition, not executable code generated directly by an AI." }
+      ]
+    },
+    {
+      "label": "Constraints and balance",
+      "title": "Keep candidates inside the game's design space.",
+      "paragraphs": ["A hybrid architecture would not allow an AI to create skills without restriction. A game-rule validator could check compatible components and reject combinations that violate the world rules or combat design.", "A proposed power budget could estimate the combined strength of components such as damage, dash, area effects, stun, burn, cooldown, and resource cost. Candidates above an allowed budget could be revised or rejected before entering a playable evaluation stage."],
+      "cards": [
+        { "title": "Rule validation", "items": ["Allow compatible combinations such as dash plus attack", "Restrict incompatible equipment and movement", "Reject excessive damage, area, control, and cooldown combinations"] },
+        { "title": "Power budget", "items": ["Estimate component costs", "Respect level or progression limits", "Adjust damage, area, duration, cooldown, or cost when needed"] },
+        { "title": "Skill Insight", "body": "Generation could be offered only after meaningful experience thresholds, rather than being available continuously." }
+      ]
+    },
+    {
+      "label": "Research aim",
+      "title": "A focused experimental environment.",
+      "paragraphs": ["The aim would not be to create a large Fantasy RPG. The game would serve as an experimental environment for studying whether Generative AI can support flexible character progression while remaining controllable by game design rules."]
+    }
+  ],
+  "architecture": ["Player Experience", "Experience Representation", "Skill / Class Generator", "Game Rule Validator", "Balance Evaluation", "Skill Simulation", "Playable Candidate"],
+  "researchQuestions": [
+    "Could a Generative AI system propose new skills from gameplay experience while keeping them consistent with explicit game rules?",
+    "Could a hybrid architecture of Generative AI and rule-based validation produce more varied candidates than a rule-based approach alone?",
+    "To what extent could generated skills reflect a player's observed playstyle?",
+    "Could the system keep dynamically generated candidates within intended balance constraints?",
+    "Could gameplay-experience-driven progression increase perceived character ownership or uniqueness compared with a fixed skill tree?"
+  ],
+  "comparison": [
+    { "title": "A — Traditional Skill Tree", "body": "Players select abilities from a predetermined list." },
+    { "title": "B — Rule-Based Procedural Skill", "body": "The system combines attributes according to developer-defined rules." },
+    { "title": "C — Generative AI + Rule Validation", "body": "An AI could interpret an experience profile and propose a skill concept before rule validation." }
+  ],
+  "comparisonNote": "A future evaluation could compare skill diversity, rule compliance, balance, playstyle relevance, player satisfaction, and perceived uniqueness. These are proposed evaluation dimensions, not reported results.",
+  "scope": [
+    { "title": "Game space", "items": ["Single-player Fantasy Action RPG sandbox", "One player character", "Three to four base classes", "Three to five weapon types", "Combat arena and varied enemy types"] },
+    { "title": "System scope", "items": ["Twenty to thirty base skills", "Experience tracking", "Skill candidate generation", "Rule validation", "Character progression"] },
+    { "title": "Boundaries", "body": "The initial prototype would prioritize a focused, observable environment over MMO-scale content or a complete commercial RPG." }
+  ],
+  "futureDirections": [
+    { "title": "Generative Class", "body": "Class candidates informed by a character's longer gameplay history." },
+    { "title": "Generative Item and Quest", "body": "Items or quests that could reflect an established playstyle." },
+    { "title": "Adaptive Monsters and Intelligent NPCs", "body": "Future exploration of agents that could respond to player behaviour or world events." }
+  ],
+  "principle": "Classes and skills are not only choices made from a fixed tree; they could become outcomes of what a character has experienced. Designers would define world rules, ability components, and constraints, while a generative system could explore combinations permitted by that design space."
+}

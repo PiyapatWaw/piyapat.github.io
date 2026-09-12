@@ -81,21 +81,21 @@
   },
   "research": {
     "interests": [
-      { "priority": "primary", "title": "Game AI", "description": "AI systems designed around gameplay rules, player interaction, game state, and measurable objectives. This refers to AI operating inside gameplay systems, not AI-generated graphics." },
-      { "priority": "primary", "title": "Procedural Content Generation", "description": "Generation of game content and systems that remain valid, varied, controllable, and consistent with explicit game rules." },
-      { "priority": "primary", "title": "AI-assisted Game Systems", "description": "AI used as an engineering component inside authored game systems, working together with explicit rules, constraints, simulation, and validation." },
+      { "priority": "primary", "title": "Game AI", "description": "AI operating inside gameplay systems, using player experience, game state, explicit rules, and measurable objectives rather than AI-generated graphics." },
+      { "priority": "primary", "title": "Procedural Content Generation", "description": "Generation of skills, classes, and other game content from reusable structured components while keeping outputs valid, varied, controllable, and rule-consistent." },
+      { "priority": "primary", "title": "AI-assisted Game Systems", "description": "AI used alongside structured game components, explicit constraints, validation, balance evaluation, and simulation inside authored game systems." },
       { "priority": "secondary", "title": "Intelligent Agents", "description": "Agents that perceive game state, reason about available actions, and make meaningful decisions under gameplay constraints." },
       { "priority": "secondary", "title": "Adaptive Gameplay", "description": "Gameplay systems that respond to player behavior or performance while preserving fairness, clarity, and design intent." },
       { "priority": "secondary", "title": "Multi-Agent Systems", "description": "Interactions among multiple autonomous agents operating under shared rules, resources, environments, and objectives." }
     ],
     "statement": "My primary interest is AI for rule-driven gameplay systems, particularly procedural generation and intelligent systems that operate under explicit game constraints, simulations, and measurable gameplay objectives.",
     "direction": {
-      "title": "Constraint-Guided Procedural Skill Generation",
-      "question": "How can game skills be procedurally generated from reusable gameplay components while remaining valid, balanced, diverse, and controllable under explicit game rules?",
-      "supportingStatement": "This proposed project explores how explicit game constraints, procedural generation, and simulation-based evaluation can be combined to create controllable and measurable gameplay content.",
-      "steps": ["Skill Components", "Constraint Model", "Candidate Generation", "Simulation", "Evaluation & Selection"],
-      "approaches": ["Rule-based Generation", "Search / Evolutionary Methods", "LLM-assisted Generation"],
-      "evaluation": ["Simulation-based Evaluation", "Validity Rate", "Balance Deviation", "Skill Diversity", "Constraint Violation Rate", "Computational Cost"]
+      "title": "Generative Class & Skill System for Fantasy RPG",
+      "question": "How can a hybrid Generative AI and rule-validation system generate class and skill candidates from gameplay experience while keeping outputs valid, balanced, diverse, and designer-controllable?",
+      "supportingStatement": "This proposed research concept explores how gameplay experience, structured components, explicit game constraints, and simulation-based evaluation could be combined in a focused Fantasy RPG prototype.",
+      "steps": ["Player Experience", "Experience Representation", "Skill / Class Generator", "Game Rule Validator", "Balance Evaluation", "Skill Simulation", "Playable Candidate"],
+      "approaches": ["Experience Tracking", "Structured Candidate Generation", "Rule-based Validation"],
+      "evaluation": ["Balance Evaluation", "Simulation", "Playstyle Relevance"]
     }
   }
 }
