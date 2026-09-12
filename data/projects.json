@@ -1,5 +1,64 @@
 [
   {
+    "id": "ai-ocr-llm-production-pipeline",
+    "title": "AI / OCR / LLM Production Pipeline",
+    "category": "ai",
+    "tags": ["C#", ".NET", "OCR", "LLM", "Structured JSON", "Validation"],
+    "year": "2025-Present",
+    "overview": "Applied AI system engineering for a document-processing workflow using OCR, LLM integration, structured output, validation, normalization, and production application integration.",
+    "detailFile": "projects/ai-ocr-llm-production-pipeline.json"
+  },
+  {
+    "id": "logistics-web-application",
+    "title": "Logistics Web Application",
+    "category": "software",
+    "tags": ["C#", "ASP.NET", ".NET Framework", "SQL", "JavaScript", "jQuery", "IIS"],
+    "year": "2025-Present",
+    "overview": "Enterprise logistics and import-export web application work using ASP.NET, C#, SQL, JavaScript, jQuery, HTML, and CSS, with support for maintenance, deployment, UAT, and production issue investigation.",
+    "detailFile": "projects/logistics-web-application.json"
+  },
+  {
+    "id": "customs-report-system",
+    "title": "Customs Report System",
+    "category": "software",
+    "tags": ["FastReport", "SQL", "C#", "Logistics", "Reporting"],
+    "year": "2025-Present",
+    "overview": "Custom business reporting work for logistics operations, including FastReport report creation and SQL-backed data preparation based on operational requirements.",
+    "detailFile": "projects/customs-report-system.json"
+  },
+  {
+    "id": "file-upload-security-refactor",
+    "title": "Security Refactor",
+    "category": "software",
+    "tags": ["C#", "ASP.NET", "SQL Parameterization", "Path Traversal", "Authorization"],
+    "year": "2025-Present",
+    "overview": "Security-focused legacy ASP.NET refactoring, including parameterized SQL, path traversal protection, safer file handling, and company-scoped user authorization checks before protected actions.",
+    "detailFile": "projects/file-upload-security-refactor.json"
+  },
+  {
+    "id": "sql-parameterization-legacy-improvement",
+    "title": "Legacy Improvement",
+    "category": "software",
+    "tags": ["C#", "LINQ", "Newtonsoft.Json", "JavaScript", "OOP", "Async/Await", "Reusable Components"],
+    "year": "2025-Present",
+    "overview": "Legacy system modernization using practical C# and JavaScript patterns, including LINQ, Dictionary, classes, actions, async flows, loading states, recycle scroll, and reusable OOP table components.",
+    "detailFile": "projects/sql-parameterization-legacy-improvement.json"
+  },
+  {
+    "id": "the-story-promayan",
+    "title": "The Story Promayan",
+    "category": "web",
+    "tags": ["Web", "HTML", "Tailwind CSS", "JavaScript", "JSON", "GitHub Actions", "Cloudflare Pages", "AI-assisted Development"],
+    "year": "2026",
+    "overview": "Static landing page for a fortune telling service, built with JSON-driven content, AI-assisted development, GitHub Actions, and Cloudflare Pages deployment.",
+    "thumbnail": "assets/Source/TheStory/brand-logo-transparent.png",
+    "mediaSizing": {
+      "thumbnailFit": "contain",
+      "thumbnailPadding": "0.55rem"
+    },
+    "detailFile": "projects/the-story-promayan.json"
+  },
+  {
     "id": "zarina",
     "title": "Zarina Project",
     "category": "game",
@@ -46,19 +105,5 @@
       "thumbnailPadding": "0.45rem"
     },
     "detailFile": "projects/xbattlecars-pvp.json"
-  },
-  {
-    "id": "the-story-promayan",
-    "title": "The Story Promayan",
-    "category": "web",
-    "tags": ["Web", "HTML", "Tailwind CSS", "JavaScript", "JSON", "GitHub Actions", "Cloudflare Pages", "AI-assisted Development"],
-    "year": "2026",
-    "overview": "Static landing page for a fortune telling service, built with JSON-driven content, AI-assisted development, GitHub Actions, and Cloudflare Pages deployment.",
-    "thumbnail": "assets/Source/TheStory/brand-logo-transparent.png",
-    "mediaSizing": {
-      "thumbnailFit": "contain",
-      "thumbnailPadding": "0.55rem"
-    },
-    "detailFile": "projects/the-story-promayan.json"
   }
 ]

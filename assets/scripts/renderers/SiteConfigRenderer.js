@@ -51,6 +51,8 @@ export class SiteConfigRenderer {
     Dom.setText("filter-all", home.portfolioFilters?.all);
     Dom.setText("filter-game", home.portfolioFilters?.game);
     Dom.setText("filter-web", home.portfolioFilters?.web);
+    Dom.setText("filter-ai", home.portfolioFilters?.ai);
+    Dom.setText("filter-software", home.portfolioFilters?.software);
   }
 
   renderDetailCopy(detail) {

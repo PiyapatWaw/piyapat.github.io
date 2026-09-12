@@ -1,0 +1,22 @@
+{
+  "role": "Software Developer responsible for creating and maintaining custom reports using FastReport and SQL-backed data preparation based on logistics business requirements.",
+  "techStack": ["FastReport", "C#", "SQL", "ASP.NET", "Logistics Reporting"],
+  "featuredMedia": null,
+  "gallery": [],
+  "videos": [],
+  "links": [],
+  "sections": [
+    {
+      "title": "Project Context",
+      "body": "Logistics and import-export teams need reports that match business workflows, document requirements, and operational review needs. The reporting work focuses on producing practical outputs for real business users."
+    },
+    {
+      "title": "Report Development",
+      "body": "I created custom FastReport reports based on business requirements and prepared SQL-backed data for report output. This required understanding the requested layout, validating data relationships, and adjusting report logic when requirements changed."
+    },
+    {
+      "title": "Maintenance",
+      "body": "I supported bug fixing and report updates when business users found data, formatting, or workflow issues during UAT and operational use."
+    }
+  ]
+}

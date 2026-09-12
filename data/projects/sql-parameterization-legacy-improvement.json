@@ -1,0 +1,30 @@
+{
+  "role": "Software Developer responsible for improving legacy ASP.NET modules with practical C# and JavaScript modernization, reusable OOP structures, async workflows, and maintainability-focused refactoring.",
+  "techStack": ["C#", "LINQ", "Newtonsoft.Json", "Dictionary", "JavaScript", "OOP", "Async/Await", "Reusable Components"],
+  "featuredMedia": null,
+  "gallery": [],
+  "videos": [],
+  "links": [],
+  "sections": [
+    {
+      "title": "Project Context",
+      "body": "Legacy enterprise applications often need practical modernization without breaking existing business workflows. This work focused on improving maintainability, code structure, reusable UI behavior, and user experience in existing ASP.NET modules."
+    },
+    {
+      "title": "C# Modernization",
+      "body": "I improved C# code using practical patterns and tools such as Newtonsoft.Json, LINQ, Dictionary-based lookup structures, classes, actions, and async patterns. These changes helped make existing logic easier to read, reuse, and maintain."
+    },
+    {
+      "title": "JavaScript Async UX",
+      "body": "I improved heavy table rendering with a recycle scroll approach for main tables containing around 1,000 to 9,000 rows. In some cases, rendering that previously took up to almost 30 minutes or failed before completion was reduced to under 5 seconds. I also added loading progress animation so users could see that the web application was still working during large data loads, and used async/await to make asynchronous JavaScript flow easier to read than long chained action-style code."
+    },
+    {
+      "title": "Reusable Table Class",
+      "body": "I created a reusable table class to replace page-by-page table code that previously built HTML by looping and concatenating strings. The new approach renders table content as HTML nodes, receives dependencies through injection, and keeps table-building functions in one focused structure that supports business-specific table behavior without duplicating logic on each page."
+    },
+    {
+      "title": "Maintainability",
+      "body": "The refactoring work reduced repeated logic and made future updates safer by moving shared behavior into reusable classes and configuration-driven structures instead of duplicating table and UI code in each module."
+    }
+  ]
+}

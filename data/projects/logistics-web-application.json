@@ -1,0 +1,22 @@
+{
+  "role": "Software Developer responsible for ASP.NET Web Application development, feature implementation, bug fixing, UAT support, deployment support, maintenance, and production issue investigation for logistics and import-export workflows.",
+  "techStack": ["C#", "ASP.NET", ".NET Framework", "SQL", "JavaScript", "jQuery", "HTML", "CSS", "IIS"],
+  "featuredMedia": null,
+  "gallery": [],
+  "videos": [],
+  "links": [],
+  "sections": [
+    {
+      "title": "Project Context",
+      "body": "This work supports enterprise logistics and import-export operations. The application helps business users process operational workflows and documents that connect with logistics requirements and Thai Customs NSW-related processes."
+    },
+    {
+      "title": "Application Development",
+      "body": "I developed and maintained ASP.NET Web Application features using C#, JavaScript, jQuery, SQL, HTML, and CSS. Work included implementing new features, modifying existing screens, fixing bugs, and supporting long-term system maintenance."
+    },
+    {
+      "title": "Integration And Operations",
+      "body": "The work involved business workflow integration with Thai Customs NSW-related processes, support for UAT, deployment coordination, and investigation of production issues reported by users."
+    }
+  ]
+}

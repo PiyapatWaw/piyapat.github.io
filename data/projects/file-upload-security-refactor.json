@@ -1,0 +1,30 @@
+{
+  "role": "Software Developer responsible for security-focused refactoring in legacy ASP.NET modules, including SQL parameterization, path traversal risk reduction, safer file handling, company-scoped authorization checks, bug fixing, and pentest-related remediation work.",
+  "techStack": ["C#", "ASP.NET", "SQL Parameterization", "Path Traversal", "Authorization", "Security Refactoring"],
+  "featuredMedia": null,
+  "gallery": [],
+  "videos": [],
+  "links": [],
+  "sections": [
+    {
+      "title": "Project Context",
+      "body": "Enterprise systems often include legacy modules that must keep supporting real users while being improved for security and maintainability. This work focused on safer data access, safer file and document handling, user authorization checks, and controlled changes to existing ASP.NET application flows."
+    },
+    {
+      "title": "SQL Parameterization",
+      "body": "I improved legacy SQL usage by applying parameterized SQL patterns to reduce SQL injection risk. The work required checking existing behavior, making controlled code changes, and validating that business results remained correct."
+    },
+    {
+      "title": "Path Traversal Protection",
+      "body": "I improved file and document handling by validating requested file paths, restricting file operations to approved application storage areas, and rejecting unsafe path patterns before processing. The wording and implementation avoid exposing internal directory structures or business-specific file paths."
+    },
+    {
+      "title": "Company-Scoped Authorization",
+      "body": "I added authorization checks before protected actions so requests could be rejected when the connected user was not mapped to the target company or did not have permission for the requested operation."
+    },
+    {
+      "title": "Pentest Remediation",
+      "body": "I supported pentest-related fixes in legacy ASP.NET modules and refactored affected areas where needed. The changes balanced security improvement, maintainability, and production stability."
+    }
+  ]
+}

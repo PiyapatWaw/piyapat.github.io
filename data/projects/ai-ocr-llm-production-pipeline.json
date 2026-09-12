@@ -1,0 +1,27 @@
+{
+  "role": "Software engineer working on the integration and production reliability of an applied AI document-processing workflow.",
+  "techStack": ["C#", ".NET", "OCR", "LLM API", "Structured JSON", "JSON Schema", "Validation", "Normalization", "Batch Processing"],
+  "architecture": ["Document / Input", "OCR / Pre-processing", "LLM", "Structured JSON", "Schema Validation", "Normalization", "Application / Database"],
+  "sections": [
+    {
+      "title": "Project Context",
+      "body": "The system processes document-derived input and turns probabilistic AI output into data that a production application can consume. This case study intentionally omits employer, client, provider, and document-specific details."
+    },
+    {
+      "title": "Pipeline Design",
+      "body": "Input passes through OCR and pre-processing before an LLM produces structured JSON. The output then moves through schema checks, application-level validation, and normalization before it can reach downstream application or database workflows."
+    },
+    {
+      "title": "Structured Output",
+      "body": "The integration treats the model response as untrusted input. Explicit output structure and JSON schema constraints make the response easier to validate, diagnose, and safely map into typed application data."
+    },
+    {
+      "title": "Validation And Normalization",
+      "body": "Validation checks required fields and expected shapes, while normalization handles formatting differences and converts accepted values into a consistent representation for downstream use."
+    },
+    {
+      "title": "Production Reliability",
+      "body": "The engineering focus is not merely calling an AI API. It is building predictable boundaries around uncertain output through defensive parsing, validation, error handling, batch-flow awareness, and integration with existing software systems."
+    }
+  ]
+}

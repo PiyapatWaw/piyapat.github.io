@@ -29,7 +29,9 @@
     "portfolioFilters": {
       "all": "All",
       "game": "Games",
-      "web": "Web"
+      "web": "Web",
+      "ai": "Applied AI",
+      "software": "Other"
     }
   },
   "detail": {

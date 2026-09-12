@@ -1,0 +1,101 @@
+{
+  "profile": {
+    "title": "Game Systems & Applied AI Engineer",
+    "tagline": "5+ years of professional Unity/C# game development experience, with additional experience in production software engineering and applied AI systems.",
+    "researchInterests": "Research Interests · Game AI • Intelligent Agents • Procedural Content Generation • Adaptive Gameplay • AI-assisted Game Systems",
+    "about": "I am a software engineer with a degree in Game and around five years of professional Unity/C# game development experience, building gameplay, multiplayer, and reusable application systems. My recent work has expanded my production software engineering capabilities through enterprise architecture, API and data integration, and applied AI workflows using OCR, LLMs, structured output, validation, and normalization. My long-term direction is to combine these backgrounds in Game AI, with particular interest in intelligent agents, procedural content generation, adaptive gameplay, and AI-assisted game systems.",
+    "stats": [
+      { "label": "Game Development", "value": "5+ Years" },
+      { "label": "Core Stack", "value": "Unity / C#" },
+      { "label": "Systems", "value": "Gameplay / Multiplayer" },
+      { "label": "Direction", "value": "Game AI" },
+      { "label": "Education", "value": "B.Sc. / Game" }
+    ],
+    "direction": "Game AI / Intelligent Systems",
+    "contactCta": "Open to Game Programmer, Gameplay Programmer, Game Systems, applied AI, and graduate research opportunities.",
+    "skills": {
+      "game development": ["Unity", "C#", "Gameplay Systems", "Game Architecture", "State Machines", "Multiplayer / Networking", "Photon PUN2", "FishNet", "Mirror", "Addressables", "Localization"],
+      "game systems / algorithms": ["Pathfinding", "Dynamic Gameplay Systems", "Combat Systems", "Skill / Buff / Debuff Systems", "Multiplayer Synchronization", "Serialization", "Game State Management"],
+      "applied AI": ["LLM API Integration", "Structured Output", "JSON Schema", "AI Response Validation", "Normalization", "OCR / Document Processing", "AI Workflow Integration"],
+      "software engineering": ["C# / .NET", "REST API", "SQL", "Git", "CI/CD", "Async Programming", "LINQ", "Dependency Injection"],
+      "research interests": ["Game AI", "Intelligent Agents", "Procedural Content Generation", "Adaptive Gameplay", "Multi-Agent Systems", "AI-assisted Game Systems"]
+    }
+  },
+  "experienceHighlights": {
+    "KSoftware": [
+      "Expanded my production C#/.NET engineering experience through architecture, API integration, data processing, and reliability work.",
+      "Integrated a document-processing workflow that moves input through OCR and an LLM into structured JSON for application use.",
+      "Applied schema validation, response validation, normalization, and batch-processing patterns to make AI output dependable in production workflows.",
+      "Improved maintainability and security through refactoring, parameterized SQL, defensive validation, and production issue investigation."
+    ],
+    "MetaEarn Company Limited": [
+      "Developed Unity/C# gamification systems spanning progression, rewards, interaction flows, and reusable UI-driven features.",
+      "Integrated deeplink and third-party login flows across application and game entry points.",
+      "Applied OOP, debugging, and iterative production delivery to connected gameplay systems."
+    ],
+    "Ring Zero Game Studio": [
+      "Built Unity/C# gameplay and gamification systems across mobile and WebGL delivery targets.",
+      "Connected gameplay, reward, and account flows through REST APIs and async programming patterns.",
+      "Improved system performance, debugging quality, and cross-platform user flow for production features."
+    ],
+    "Skynet 888 Studio": [
+      "Stabilized Photon PUN2 multiplayer architecture across disconnect, reconnect, room-state synchronization, and host migration scenarios.",
+      "Designed byte serialization workflows for complex gameplay and network state under constrained room-data formats.",
+      "Implemented combat-adjacent systems including player selection, skills, buffs, debuffs, inventory, territory state, and team data."
+    ],
+    "Global Wireless": [
+      "Developed educational Unity/C# applications for Android and iOS across varied lesson and interaction designs.",
+      "Built reusable data and content-loading pipelines so shared game structures could support multiple grade levels.",
+      "Delivered many small production projects through structured planning, debugging, and reusable architecture."
+    ],
+    "X10 Interactive": [
+      "Started my professional game-development career on Pandora Hunter, a Thai-inspired mobile board game built with Unity and C#.",
+      "Implemented UI screens, client-side gameplay features, API communication, and JSON data handling.",
+      "Supported stage design, gameplay debugging, and varied obstacle and trap layouts for short-session mobile play."
+    ]
+  },
+  "projects": {
+    "order": ["ai-ocr-llm-production-pipeline", "zarina", "xbattlecars-pvp", "sekai-o-sukuu", "pandora-hunter", "the-story-promayan", "logistics-web-application", "customs-report-system", "file-upload-security-refactor", "sql-parameterization-legacy-improvement"],
+    "filters": [
+      { "id": "all", "label": "All" },
+      { "id": "game", "label": "Games", "categories": ["game"] },
+      { "id": "web", "label": "Web", "categories": ["web"] },
+      { "id": "ai", "label": "Applied AI", "categories": ["ai"] },
+      { "id": "software", "label": "Other", "categories": ["software"] }
+    ],
+    "additional": []
+  },
+  "education": {
+    "university": "Silpakorn University",
+    "degree": "Bachelor of Science, Game Design",
+    "year": "2015-2019",
+    "gpa": "2.87",
+    "coursework": [
+      { "name": "Computer Programming for Information Technology II", "grade": "A" },
+      { "name": "Mathematics for Information Technology I", "grade": "A" },
+      { "name": "Application Software Development for Information Technology I", "grade": "A" },
+      { "name": "Game Design II", "grade": "A" },
+      { "name": "Software Architecture", "grade": "A" },
+      { "name": "Senior Project", "grade": "B+" }
+    ]
+  },
+  "research": {
+    "interests": [
+      { "priority": "primary", "title": "Game AI", "description": "AI systems designed around gameplay rules, player interaction, game state, and measurable objectives. This refers to AI operating inside gameplay systems, not AI-generated graphics." },
+      { "priority": "primary", "title": "Procedural Content Generation", "description": "Generation of game content and systems that remain valid, varied, controllable, and consistent with explicit game rules." },
+      { "priority": "primary", "title": "AI-assisted Game Systems", "description": "AI used as an engineering component inside authored game systems, working together with explicit rules, constraints, simulation, and validation." },
+      { "priority": "secondary", "title": "Intelligent Agents", "description": "Agents that perceive game state, reason about available actions, and make meaningful decisions under gameplay constraints." },
+      { "priority": "secondary", "title": "Adaptive Gameplay", "description": "Gameplay systems that respond to player behavior or performance while preserving fairness, clarity, and design intent." },
+      { "priority": "secondary", "title": "Multi-Agent Systems", "description": "Interactions among multiple autonomous agents operating under shared rules, resources, environments, and objectives." }
+    ],
+    "statement": "My primary interest is AI for rule-driven gameplay systems, particularly procedural generation and intelligent systems that operate under explicit game constraints, simulations, and measurable gameplay objectives.",
+    "direction": {
+      "title": "Constraint-Guided Procedural Skill Generation",
+      "question": "How can game skills be procedurally generated from reusable gameplay components while remaining valid, balanced, diverse, and controllable under explicit game rules?",
+      "supportingStatement": "This proposed project explores how explicit game constraints, procedural generation, and simulation-based evaluation can be combined to create controllable and measurable gameplay content.",
+      "steps": ["Skill Components", "Constraint Model", "Candidate Generation", "Simulation", "Evaluation & Selection"],
+      "approaches": ["Rule-based Generation", "Search / Evolutionary Methods", "LLM-assisted Generation"],
+      "evaluation": ["Simulation-based Evaluation", "Validity Rate", "Balance Deviation", "Skill Diversity", "Constraint Violation Rate", "Computational Cost"]
+    }
+  }
+}
