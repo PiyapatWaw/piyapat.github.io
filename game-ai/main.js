@@ -45,6 +45,13 @@ async function renderResearchPrototype() {
       <h1>${escapeHtml(prototype.title)}</h1>
       <p class="hero-tagline">${escapeHtml(prototype.summary)}</p>
       <p class="research-supporting-statement">${escapeHtml(prototype.statusNote)}</p>
+      <div class="source-document reveal">
+        <button class="button ghost" type="button" id="source-document-toggle" aria-expanded="false" aria-controls="source-document-panel">View live source document</button>
+        <div class="source-document-panel" id="source-document-panel" hidden>
+          <iframe class="source-document-frame" data-src="${escapeAttribute(prototype.sourceDocument.embedUrl)}" title="Live source document: ${escapeAttribute(prototype.title)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <p><a class="text-link" href="${escapeAttribute(prototype.sourceDocument.url)}" target="_blank" rel="noreferrer">Open in Google Docs</a></p>
+        </div>
+      </div>
     </section>
     ${conceptSections}
     <section class="section-shell research-prototype-section"><div class="section-heading reveal"><p class="eyebrow">Proposed hybrid architecture</p><h2>From gameplay experience to a playable candidate.</h2></div><div class="pipeline-flow reveal research-prototype-flow">${prototype.architecture.map((step, index) => `<span class="flow-step">${escapeHtml(step)}</span>${index < prototype.architecture.length - 1 ? '<span class="flow-arrow" aria-hidden="true">→</span>' : ""}`).join("")}</div></section>
@@ -53,6 +60,17 @@ async function renderResearchPrototype() {
     <section class="section-shell research-prototype-section"><div class="section-heading reveal"><p class="eyebrow">Proposed comparison</p><h2>Three system configurations.</h2></div>${cardGrid(prototype.comparison)}<div class="research-prototype-copy reveal"><p>${escapeHtml(prototype.comparisonNote)}</p></div></section>
     <section class="content-band research-prototype-section"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">Prototype scope</p><h2>A focused experimental environment.</h2></div>${cardGrid(prototype.scope)}</div></section>
     <section class="section-shell research-prototype-section"><div class="section-heading reveal"><p class="eyebrow">Future directions</p><h2>Extensions to explore later.</h2></div>${cardGrid(prototype.futureDirections)}<blockquote class="research-principle reveal">${escapeHtml(prototype.principle)}</blockquote></section>`;
+
+  const sourceToggle = document.getElementById("source-document-toggle");
+  const sourcePanel = document.getElementById("source-document-panel");
+  const sourceFrame = sourcePanel.querySelector("iframe");
+  sourceToggle.addEventListener("click", () => {
+    const isOpen = sourceToggle.getAttribute("aria-expanded") === "true";
+    if (!isOpen && !sourceFrame.getAttribute("src")) sourceFrame.src = sourceFrame.dataset.src;
+    sourcePanel.hidden = isOpen;
+    sourceToggle.setAttribute("aria-expanded", String(!isOpen));
+    sourceToggle.textContent = isOpen ? "View live source document" : "Hide source document";
+  });
 }
 
 async function loadProjects(config) {

@@ -3,6 +3,10 @@
   "title": "Generative Class & Skill System for Fantasy RPG",
   "summary": "A proposed Fantasy RPG prototype in which character classes and skills could emerge from gameplay experience while remaining inside explicit game rules and designer-defined constraints.",
   "statusNote": "This page describes a proposed research concept and prototype direction. It does not report a completed implementation, experiment, or research result.",
+  "sourceDocument": {
+    "url": "https://docs.google.com/document/d/1itGtSCVdEXuMCQg7N7fi3GEvDGH3miWi5dylwC3-rMA/edit",
+    "embedUrl": "https://docs.google.com/document/d/1itGtSCVdEXuMCQg7N7fi3GEvDGH3miWi5dylwC3-rMA/preview"
+  },
   "sections": [
     {
       "label": "Concept",

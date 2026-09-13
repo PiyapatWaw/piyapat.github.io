@@ -111,6 +111,27 @@
   margin-top: 1.5rem;
 }
 
+.source-document {
+  margin-top: 1.5rem;
+}
+
+.source-document-panel {
+  margin-top: 1rem;
+}
+
+.source-document-frame {
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.source-document-panel p {
+  margin: 0.75rem 0 0;
+}
+
 .research-prototype-hero {
   max-width: 1200px;
 }
@@ -272,6 +293,7 @@
 @media (max-width: 640px) {
   #hero-name { font-size: clamp(3.2rem, 15vw, 4.3rem); }
   .research-prototype-hero h1 { font-size: clamp(3.1rem, 14vw, 4.2rem); }
+  .source-document-frame { min-height: 560px; }
   .research-grid,
   .research-prototype-grid,
   .direction-grid,

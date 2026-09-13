@@ -81,21 +81,21 @@
   },
   "research": {
     "interests": [
-      { "priority": "primary", "title": "Game AI", "description": "AI operating inside gameplay systems, using player experience, game state, explicit rules, and measurable objectives rather than AI-generated graphics." },
-      { "priority": "primary", "title": "Procedural Content Generation", "description": "Generation of skills, classes, and other game content from reusable structured components while keeping outputs valid, varied, controllable, and rule-consistent." },
-      { "priority": "primary", "title": "AI-assisted Game Systems", "description": "AI used alongside structured game components, explicit constraints, validation, balance evaluation, and simulation inside authored game systems." },
-      { "priority": "secondary", "title": "Intelligent Agents", "description": "Agents that perceive game state, reason about available actions, and make meaningful decisions under gameplay constraints." },
-      { "priority": "secondary", "title": "Adaptive Gameplay", "description": "Gameplay systems that respond to player behavior or performance while preserving fairness, clarity, and design intent." },
-      { "priority": "secondary", "title": "Multi-Agent Systems", "description": "Interactions among multiple autonomous agents operating under shared rules, resources, environments, and objectives." }
+      { "priority": "primary", "title": "Game AI", "description": "AI for gameplay systems that can reason from player experience and game state while operating under explicit rules, constraints, and measurable design objectives." },
+      { "priority": "primary", "title": "Procedural Content Generation", "description": "Generation of skill, class, and other gameplay candidates from structured components, with variation guided by player experience rather than a fixed progression tree alone." },
+      { "priority": "primary", "title": "AI-assisted Game Systems", "description": "Hybrid game systems where generative suggestions are checked through game-rule validation, power budgets, balance evaluation, and simulation before becoming playable candidates." },
+      { "priority": "secondary", "title": "Intelligent Agents", "description": "Agents that could perceive game state, reason about available actions, and make meaningful decisions within authored gameplay constraints." },
+      { "priority": "secondary", "title": "Adaptive Gameplay", "description": "Gameplay and progression that could respond to observed player behaviour while preserving fairness, clarity, and designer intent." },
+      { "priority": "secondary", "title": "Multi-Agent Systems", "description": "Interactions among multiple autonomous agents operating with shared rules, resources, environments, and gameplay objectives." }
     ],
-    "statement": "My primary interest is AI for rule-driven gameplay systems, particularly procedural generation and intelligent systems that operate under explicit game constraints, simulations, and measurable gameplay objectives.",
+    "statement": "My primary interest is in experience-driven, rule-constrained gameplay systems: using structured player experience to explore skill and class progression while keeping generated candidates valid, balanced, and designer-controllable.",
     "direction": {
       "title": "Generative Class & Skill System for Fantasy RPG",
-      "question": "How can a hybrid Generative AI and rule-validation system generate class and skill candidates from gameplay experience while keeping outputs valid, balanced, diverse, and designer-controllable?",
-      "supportingStatement": "This proposed research concept explores how gameplay experience, structured components, explicit game constraints, and simulation-based evaluation could be combined in a focused Fantasy RPG prototype.",
+      "question": "How might a hybrid Generative AI and rule-validation system propose class and skill candidates from gameplay experience while keeping them valid, balanced, diverse, and designer-controllable?",
+      "supportingStatement": "The proposed Fantasy RPG prototype would turn observed gameplay into a structured experience representation, generate candidates from reusable game components, then validate, balance-check, and simulate them before they could become playable.",
       "steps": ["Player Experience", "Experience Representation", "Skill / Class Generator", "Game Rule Validator", "Balance Evaluation", "Skill Simulation", "Playable Candidate"],
-      "approaches": ["Experience Tracking", "Structured Candidate Generation", "Rule-based Validation"],
-      "evaluation": ["Balance Evaluation", "Simulation", "Playstyle Relevance"]
+      "approaches": ["Experience Representation", "Structured Skill & Class Definitions", "Game-rule Validation", "Power Budget"],
+      "evaluation": ["Rule Compliance", "Balance", "Simulation", "Playstyle Relevance"]
     }
   }
 }
