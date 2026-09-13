@@ -1,100 +1,89 @@
 {
-  "label": "Proposed research concept",
-  "title": "Generative Class & Skill System for Fantasy RPG",
-  "summary": "A proposed Fantasy RPG prototype in which character classes and skills could emerge from gameplay experience while remaining inside explicit game rules and designer-defined constraints.",
-  "statusNote": "This page describes a proposed research concept and prototype direction. It does not report a completed implementation, experiment, or research result.",
+  "label": "Proposed Master's research",
+  "title": "Experience-Driven Character Evolution",
+  "workingTitle": "A Shared Experience Model for Adaptive Behaviour and Skill Progression in RPG Companion Agents",
+  "summary": "A proposed RPG research prototype in which a shared representation of accumulated gameplay experience guides both companion behaviour adaptation and skill progression.",
+  "statusNote": "This page describes a proposed research direction. It does not report a completed implementation, experiment, or research result.",
   "sourceDocument": {
     "url": "https://docs.google.com/document/d/1itGtSCVdEXuMCQg7N7fi3GEvDGH3miWi5dylwC3-rMA/edit",
     "embedUrl": "https://docs.google.com/document/d/1itGtSCVdEXuMCQg7N7fi3GEvDGH3miWi5dylwC3-rMA/preview"
   },
   "sections": [
     {
-      "label": "Concept",
-      "title": "Character growth shaped by experience.",
+      "label": "Research vision",
+      "title": "One history, two forms of character evolution.",
       "paragraphs": [
-        "The proposed Fantasy RPG concept explores character progression beyond a fully predetermined level-and-skill-tree structure. A player could begin with a base class such as Warrior, Mage, Archer, or Cleric and a small set of starting skills.",
-        "Combat behaviour, encountered enemies, weapons, practiced skills, survival situations, and player decisions could contribute to a structured experience profile. A hybrid system could then propose new skill or class candidates that reflect how the character has been played."
+        "The proposed research explores whether characters that begin from the same initial state could evolve differently according to their actual gameplay histories. A shared Character Experience Profile would represent accumulated encounters, combat events, choices, and conditions in a structured form.",
+        "The same profile would be consumed by both a companion behaviour system and a skill-progression system, so changes in behaviour and abilities remain connected to what the character has experienced rather than appearing as unrelated or random variation."
       ]
     },
     {
-      "label": "Illustrative player experience",
-      "title": "From behaviour to a skill candidate.",
-      "paragraphs": ["For example, a Warrior who frequently blocks attacks, protects party members, encounters fire damage, survives difficult fights, and follows guard events with counter attacks could develop an experience profile around defensive counterplay."],
+      "label": "Character Experience Profile",
+      "title": "Structured gameplay history, not unrestricted narrative.",
+      "paragraphs": ["Gameplay events and combat metrics could be transformed into a shared representation that captures relevant patterns over time. The profile would provide a common, inspectable basis for adaptive behaviour and skill progression."],
       "cards": [
-        { "title": "Observed signals", "items": ["Block events and perfect guards", "Damage prevented for allies", "Fire damage received", "Counter actions after guards"] },
-        { "title": "Possible candidate", "body": "Flameguard Counter: a defensive counter skill that could convert absorbed fire damage into a conditional retaliatory attack." },
-        { "title": "Design intent", "body": "The candidate is proposed from play history rather than selected directly from a fixed skill tree." }
+        { "title": "Encounter context", "items": ["Enemy types and encounter conditions", "Combat outcomes and survival pressure", "Companion and player roles"] },
+        { "title": "Observed actions", "items": ["Attack, defence, support, and movement patterns", "Skill use and resource management", "Repeated tactical choices"] },
+        { "title": "Designer-facing representation", "body": "The proposed profile would remain structured and interpretable so designers can define what signals matter and how they may affect character development." }
       ]
     },
     {
-      "label": "Class evolution",
-      "title": "Possible class directions from playstyle.",
-      "paragraphs": ["The same idea could extend to class candidates. A Warrior who repeatedly combines sword use, fire magic, rapid movement, and hybrid sword-fire skills could be offered a direction such as Flame Blade or Arcane Swordsman. Different players starting from the same base class could therefore explore different growth paths."],
+      "label": "Two consumers",
+      "title": "Behaviour and skills evolve from the same experience.",
+      "paragraphs": ["The key concept is not a separate behaviour model and skill generator working independently. Both systems would refer to the same accumulated experience, allowing a companion's decisions and abilities to develop as related outcomes of its play history."],
       "cards": [
-        { "title": "Example: Flame Blade", "items": ["Warrior base class", "Sword mastery", "Fire magic", "Repeated dash-oriented combat"] },
-        { "title": "Example: Frost Guardian", "items": ["Mage base class", "Ice magic", "Barrier skills", "Party-protection experience"] },
-        { "title": "Unique class direction", "body": "Rare combinations of crafting, weapons, armour, and combat behaviour could later support distinctive class candidates such as a Battle Forgemaster." }
+        { "title": "Behaviour adaptation", "body": "A companion could gradually adjust tactical preferences, support choices, positioning, or responses to recurring situations." },
+        { "title": "Skill progression", "body": "Skills could develop through structured progression rules that reflect established experience patterns and designer-defined limits." },
+        { "title": "Character divergence", "body": "Characters with matching starting states but different conditions could gradually diverge in explainable ways that remain tied to their histories." }
       ]
     },
     {
-      "label": "Experience representation",
-      "title": "Structured signals instead of raw narrative.",
-      "paragraphs": ["Player experience would not need to be sent to an AI as unrestricted prose. The proposed system would represent it as structured gameplay data that can describe a character's recent playstyle."],
+      "label": "Designer control",
+      "title": "Adaptation inside authored boundaries.",
+      "paragraphs": ["The proposal treats adaptation as part of an authored game system. Deterministic logic, constraints, balance rules, and observable boundaries would remain central so that change is understandable and controllable rather than unconstrained."],
       "cards": [
-        { "title": "Combat", "items": ["Weapon use", "Damage type", "Enemy type", "Critical hits", "Dodge, block, counter", "Distance, combo, damage dealt and taken"] },
-        { "title": "Exploration and magic", "items": ["Distance travelled", "Environment and weather", "Hidden areas and treasure", "Element use and combinations", "Mana use and spell range"] },
-        { "title": "Social and party play", "items": ["Healing and protecting allies", "Buffing and reviving", "Solo or party play"] }
-      ]
-    },
-    {
-      "label": "Skill representation",
-      "title": "Reusable components for controllable generation.",
-      "paragraphs": ["Each skill could be represented as structured data instead of relying only on bespoke code. This would let a generator assemble candidates from components that the game system already understands."],
-      "cards": [
-        { "title": "Core skill fields", "items": ["Type, weapon requirement, element, target", "Range, area, damage, hit count", "Movement, resource cost, cooldown", "Status effect and activation conditions"] },
-        { "title": "Illustrative candidate", "body": "Crimson Flash could combine a forward dash, sword attack, fire element, burn status, and a distance-based critical condition." },
-        { "title": "Structured output", "body": "A candidate would be expressed as a skill definition, not executable code generated directly by an AI." }
-      ]
-    },
-    {
-      "label": "Constraints and balance",
-      "title": "Keep candidates inside the game's design space.",
-      "paragraphs": ["A hybrid architecture would not allow an AI to create skills without restriction. A game-rule validator could check compatible components and reject combinations that violate the world rules or combat design.", "A proposed power budget could estimate the combined strength of components such as damage, dash, area effects, stun, burn, cooldown, and resource cost. Candidates above an allowed budget could be revised or rejected before entering a playable evaluation stage."],
-      "cards": [
-        { "title": "Rule validation", "items": ["Allow compatible combinations such as dash plus attack", "Restrict incompatible equipment and movement", "Reject excessive damage, area, control, and cooldown combinations"] },
-        { "title": "Power budget", "items": ["Estimate component costs", "Respect level or progression limits", "Adjust damage, area, duration, cooldown, or cost when needed"] },
-        { "title": "Skill Insight", "body": "Generation could be offered only after meaningful experience thresholds, rather than being available continuously." }
+        { "title": "Rules and constraints", "body": "Designers could specify permitted behaviour changes, skill progression conditions, and boundaries for the game world." },
+        { "title": "Balance and stability", "body": "Evaluation would consider whether changes remain consistent, stable over time, and appropriate to the intended gameplay conditions." },
+        { "title": "Explainability", "body": "The shared profile could make it possible to relate a character change back to recorded experience and defined game rules." }
       ]
     },
     {
       "label": "Research aim",
-      "title": "A focused experimental environment.",
-      "paragraphs": ["The aim would not be to create a large Fantasy RPG. The game would serve as an experimental environment for studying whether Generative AI can support flexible character progression while remaining controllable by game design rules."]
+      "title": "A focused RPG companion-agent prototype.",
+      "paragraphs": ["The proposed prototype would serve as an experimental environment rather than a complete commercial RPG. Its purpose would be to study whether one shared experience representation can support adaptive companion behaviour and skill progression while preserving designer control."]
     }
   ],
-  "architecture": ["Player Experience", "Experience Representation", "Skill / Class Generator", "Game Rule Validator", "Balance Evaluation", "Skill Simulation", "Playable Candidate"],
+  "flow": {
+    "encounter": "Gameplay Encounter",
+    "extraction": "Gameplay Event / Feature Extraction",
+    "model": "Shared Experience Model\nCharacter Experience Profile",
+    "consumers": ["Behaviour Adaptation", "Skill Progression / Skill Evolution"],
+    "state": "Updated Character State",
+    "next": "Next Encounter",
+    "feedback": "New Experience Feedback Loop"
+  },
   "researchQuestions": [
-    "Could a Generative AI system propose new skills from gameplay experience while keeping them consistent with explicit game rules?",
-    "Could a hybrid architecture of Generative AI and rule-based validation produce more varied candidates than a rule-based approach alone?",
-    "To what extent could generated skills reflect a player's observed playstyle?",
-    "Could the system keep dynamically generated candidates within intended balance constraints?",
-    "Could gameplay-experience-driven progression increase perceived character ownership or uniqueness compared with a fixed skill tree?"
+    "Can a shared representation of accumulated gameplay experience guide both companion behaviour adaptation and skill progression so that characters evolve in ways that reflect their actual gameplay histories?",
+    "To what extent can behaviour changes and skill progression remain aligned with the experience patterns represented in a Character Experience Profile?",
+    "Can characters with the same initial state diverge meaningfully under different gameplay conditions while remaining within designer-defined constraints?",
+    "How stable and explainable are adaptive changes over time within repeated or comparable gameplay conditions?",
+    "How do players perceive character evolution when behaviour and abilities develop from a shared history?"
   ],
   "comparison": [
-    { "title": "A — Traditional Skill Tree", "body": "Players select abilities from a predetermined list." },
-    { "title": "B — Rule-Based Procedural Skill", "body": "The system combines attributes according to developer-defined rules." },
-    { "title": "C — Generative AI + Rule Validation", "body": "An AI could interpret an experience profile and propose a skill concept before rule validation." }
+    { "title": "A — Fixed Companion and Skill Tree", "body": "Behaviour and abilities follow predetermined authored paths." },
+    { "title": "B — Separate Adaptive Systems", "body": "Behaviour and skill changes use separate inputs or rules without a shared experience representation." },
+    { "title": "C — Shared Experience Model", "body": "Both behaviour adaptation and skill progression are informed by one structured Character Experience Profile." }
   ],
-  "comparisonNote": "A future evaluation could compare skill diversity, rule compliance, balance, playstyle relevance, player satisfaction, and perceived uniqueness. These are proposed evaluation dimensions, not reported results.",
+  "comparisonNote": "A future evaluation could consider experience–behaviour alignment, skill–experience alignment, character divergence, within-condition consistency, temporal stability, player perception, and rule compliance. These are proposed evaluation dimensions, not reported results.",
   "scope": [
-    { "title": "Game space", "items": ["Single-player Fantasy Action RPG sandbox", "One player character", "Three to four base classes", "Three to five weapon types", "Combat arena and varied enemy types"] },
-    { "title": "System scope", "items": ["Twenty to thirty base skills", "Experience tracking", "Skill candidate generation", "Rule validation", "Character progression"] },
-    { "title": "Boundaries", "body": "The initial prototype would prioritize a focused, observable environment over MMO-scale content or a complete commercial RPG." }
+    { "title": "Game space", "items": ["Focused RPG combat encounters", "One player and companion-agent context", "Defined encounter conditions and gameplay events", "A limited set of authored skills and behaviour options"] },
+    { "title": "System scope", "items": ["Gameplay event extraction", "Character Experience Profile", "Behaviour adaptation", "Skill progression", "Designer constraints and feedback loop"] },
+    { "title": "Boundaries", "body": "The initial prototype would prioritise a controlled, observable research environment over a complete RPG, autonomous-agent claim, or production-scale companion system." }
   ],
   "futureDirections": [
-    { "title": "Generative Class", "body": "Class candidates informed by a character's longer gameplay history." },
-    { "title": "Generative Item and Quest", "body": "Items or quests that could reflect an established playstyle." },
-    { "title": "Adaptive Monsters and Intelligent NPCs", "body": "Future exploration of agents that could respond to player behaviour or world events." }
+    { "title": "Richer experience signals", "body": "Explore additional player, companion, and world-event signals while retaining a clear shared representation." },
+    { "title": "Broader character roles", "body": "Study how the shared model could support different companion roles and progression paths under authored constraints." },
+    { "title": "Player-facing explanation", "body": "Explore how a game could communicate why a companion changed through its accumulated experiences." }
   ],
-  "principle": "Classes and skills are not only choices made from a fixed tree; they could become outcomes of what a character has experienced. Designers would define world rules, ability components, and constraints, while a generative system could explore combinations permitted by that design space."
+  "principle": "A character's behaviour and abilities could become related outcomes of what it has experienced, while designers retain responsibility for the rules, constraints, and boundaries that make those outcomes understandable."
 }

@@ -2,8 +2,8 @@
   "profile": {
     "title": "Game Systems & Applied AI Engineer",
     "tagline": "5+ years of professional Unity/C# game development experience, with additional experience in production software engineering and applied AI systems.",
-    "researchInterests": "Research Interests · Game AI • Intelligent Agents • Procedural Content Generation • Adaptive Gameplay • AI-assisted Game Systems",
-    "about": "I am a software engineer with a degree in Game and around five years of professional Unity/C# game development experience, building gameplay, multiplayer, and reusable application systems. My recent work has expanded my production software engineering capabilities through enterprise architecture, API and data integration, and applied AI workflows using OCR, LLMs, structured output, validation, and normalization. My long-term direction is to combine these backgrounds in Game AI, with particular interest in intelligent agents, procedural content generation, adaptive gameplay, and AI-assisted game systems.",
+    "researchInterests": "Research Interests · Game AI · Adaptive Companion Agents · Experience-Driven Character Evolution · Dynamic Character Progression · Controllable AI Systems",
+    "about": "I am a software engineer with a degree in Game and around five years of professional Unity/C# game development experience, building gameplay, multiplayer, and reusable application systems. My recent work has expanded my production software engineering capabilities through enterprise architecture, API and data integration, and applied AI workflows using OCR, LLMs, structured output, validation, and normalization. My long-term direction is Game AI research, particularly adaptive companion agents, experience-driven character evolution, dynamic character progression, and AI systems that can adapt while remaining understandable and controllable by game designers.",
     "stats": [
       { "label": "Game Development", "value": "5+ Years" },
       { "label": "Core Stack", "value": "Unity / C#" },
@@ -11,14 +11,14 @@
       { "label": "Direction", "value": "Game AI" },
       { "label": "Education", "value": "B.Sc. / Game" }
     ],
-    "direction": "Game AI / Intelligent Systems",
+    "direction": "Game AI / Adaptive Companion Agents",
     "contactCta": "Open to Game Programmer, Gameplay Programmer, Game Systems, applied AI, and graduate research opportunities.",
     "skills": {
       "game development": ["Unity", "C#", "Gameplay Systems", "Game Architecture", "State Machines", "Multiplayer / Networking", "Photon PUN2", "FishNet", "Mirror", "Addressables", "Localization"],
       "game systems / algorithms": ["Pathfinding", "Dynamic Gameplay Systems", "Combat Systems", "Skill / Buff / Debuff Systems", "Multiplayer Synchronization", "Serialization", "Game State Management"],
       "applied AI": ["LLM API Integration", "Structured Output", "JSON Schema", "AI Response Validation", "Normalization", "OCR / Document Processing", "AI Workflow Integration"],
       "software engineering": ["C# / .NET", "REST API", "SQL", "Git", "CI/CD", "Async Programming", "LINQ", "Dependency Injection"],
-      "research interests": ["Game AI", "Intelligent Agents", "Procedural Content Generation", "Adaptive Gameplay", "Multi-Agent Systems", "AI-assisted Game Systems"]
+      "research interests": ["Game AI", "Adaptive Companion Agents", "Experience Representation", "Dynamic Character Progression", "Experience-Driven Character Evolution", "Controllable AI Systems", "Intelligent Agents"]
     }
   },
   "experienceHighlights": {
@@ -67,7 +67,7 @@
   },
   "education": {
     "university": "Silpakorn University",
-    "degree": "Bachelor of Science, Game Design",
+    "degree": "Bachelor of Science — Major: Game",
     "year": "2015-2019",
     "gpa": "2.87",
     "coursework": [
@@ -81,21 +81,32 @@
   },
   "research": {
     "interests": [
-      { "priority": "primary", "title": "Game AI", "description": "AI for gameplay systems that can reason from player experience and game state while operating under explicit rules, constraints, and measurable design objectives." },
-      { "priority": "primary", "title": "Procedural Content Generation", "description": "Generation of skill, class, and other gameplay candidates from structured components, with variation guided by player experience rather than a fixed progression tree alone." },
-      { "priority": "primary", "title": "AI-assisted Game Systems", "description": "Hybrid game systems where generative suggestions are checked through game-rule validation, power budgets, balance evaluation, and simulation before becoming playable candidates." },
+      { "priority": "primary", "title": "Game AI & Adaptive Companion Agents", "description": "Game AI systems in which companion behaviour can gradually adapt to accumulated gameplay experience while remaining explainable and controllable within authored game rules." },
+      { "priority": "primary", "title": "Experience-Driven Character Evolution", "description": "Using a shared representation of gameplay history so that both character behaviour and skill progression can evolve from what the character has actually done and encountered." },
+      { "priority": "primary", "title": "Hybrid & Controllable AI Systems", "description": "Combining deterministic game logic with adaptive, machine-learning, or generative components while preserving designer control, game rules, balance constraints, and predictable boundaries." },
       { "priority": "secondary", "title": "Intelligent Agents", "description": "Agents that could perceive game state, reason about available actions, and make meaningful decisions within authored gameplay constraints." },
-      { "priority": "secondary", "title": "Adaptive Gameplay", "description": "Gameplay and progression that could respond to observed player behaviour while preserving fairness, clarity, and designer intent." },
-      { "priority": "secondary", "title": "Multi-Agent Systems", "description": "Interactions among multiple autonomous agents operating with shared rules, resources, environments, and gameplay objectives." }
+      { "priority": "secondary", "title": "Adaptive Gameplay", "description": "Gameplay that could respond to player behaviour or performance while preserving fairness, clarity, and designer intent." },
+      { "priority": "secondary", "title": "Procedural Content Generation", "description": "A supporting interest in structured methods for creating varied game content under designer-defined rules." },
+      { "priority": "secondary", "title": "AI-assisted Game Systems", "description": "AI used alongside authored game components, validation, and explicit constraints." },
+      { "priority": "secondary", "title": "Multi-Agent Systems", "description": "A supporting interest in interactions among autonomous agents operating under shared rules and objectives." }
     ],
-    "statement": "My primary interest is in experience-driven, rule-constrained gameplay systems: using structured player experience to explore skill and class progression while keeping generated candidates valid, balanced, and designer-controllable.",
+    "statement": "My primary interest is experience-driven character evolution: using structured gameplay history to influence both how a character behaves and how its abilities develop, while keeping the resulting system understandable, balanced, and designer-controllable.",
     "direction": {
-      "title": "Generative Class & Skill System for Fantasy RPG",
-      "question": "How might a hybrid Generative AI and rule-validation system propose class and skill candidates from gameplay experience while keeping them valid, balanced, diverse, and designer-controllable?",
-      "supportingStatement": "The proposed Fantasy RPG prototype would turn observed gameplay into a structured experience representation, generate candidates from reusable game components, then validate, balance-check, and simulate them before they could become playable.",
-      "steps": ["Player Experience", "Experience Representation", "Skill / Class Generator", "Game Rule Validator", "Balance Evaluation", "Skill Simulation", "Playable Candidate"],
-      "approaches": ["Experience Representation", "Structured Skill & Class Definitions", "Game-rule Validation", "Power Budget"],
-      "evaluation": ["Rule Compliance", "Balance", "Simulation", "Playstyle Relevance"]
+      "title": "Experience-Driven Character Evolution",
+      "workingTitle": "A Shared Experience Model for Adaptive Behaviour and Skill Progression in RPG Companion Agents",
+      "question": "Can a shared representation of accumulated gameplay experience guide both companion behaviour adaptation and skill progression so that characters evolve in ways that reflect their actual gameplay histories?",
+      "supportingStatement": "The proposed RPG prototype records gameplay events and combat metrics and transforms them into a Character Experience Profile. The same representation is then used by both the behaviour system and the skill-progression system. Characters that begin from the same initial state but experience different gameplay conditions should gradually diverge in behaviour and abilities in ways that remain related to their histories rather than random variation.",
+      "flow": {
+        "encounter": "Gameplay Encounter",
+        "extraction": "Gameplay Event / Feature Extraction",
+        "model": "Shared Experience Model\nCharacter Experience Profile",
+        "consumers": ["Behaviour Adaptation", "Skill Progression / Skill Evolution"],
+        "state": "Updated Character State",
+        "next": "Next Encounter",
+        "feedback": "New Experience Feedback Loop"
+      },
+      "approaches": ["Gameplay Event Extraction", "Character Experience Profile", "Shared Experience Representation", "Behaviour Adaptation", "Skill Progression", "Designer Constraints", "Feedback Loop"],
+      "evaluation": ["Experience–Behaviour Alignment", "Skill–Experience Alignment", "Character Divergence", "Within-Condition Consistency", "Temporal Stability", "Player Perception", "Rule / Constraint Compliance"]
     }
   }
 }

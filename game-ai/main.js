@@ -12,6 +12,30 @@ const images = new ImageLoadingController();
 const reveal = new RevealController();
 const media = new MediaRenderer(assetUrls);
 
+function renderSharedExperienceFlow(flow) {
+  const label = (value) => escapeHtml(value).replace(/\n/g, "<br>");
+  const card = (value, modifier = "") => `<span class="flow-step ${modifier}">${label(value)}</span>`;
+  return `<div class="shared-experience-flow" aria-label="Shared experience model research flow">
+    <div class="shared-flow-sequence">
+      ${card(flow.encounter)}<span class="flow-arrow flow-arrow--down" aria-hidden="true">↓</span>
+      ${card(flow.extraction)}<span class="flow-arrow flow-arrow--down" aria-hidden="true">↓</span>
+      ${card(flow.model, "flow-step--shared-model")}
+    </div>
+    <div class="shared-flow-branch">
+      <span class="flow-arrow flow-arrow--down" aria-hidden="true">↓</span>
+      <div class="shared-flow-consumers">
+        ${flow.consumers.map((consumer) => card(consumer, "flow-step--consumer")).join("")}
+      </div>
+    </div>
+    <div class="shared-flow-sequence">
+      <span class="flow-arrow flow-arrow--down" aria-hidden="true">↓</span>
+      ${card(flow.state)}<span class="flow-arrow flow-arrow--down" aria-hidden="true">↓</span>
+      ${card(flow.next)}<span class="flow-arrow flow-arrow--down" aria-hidden="true">↓</span>
+      ${card(flow.feedback, "flow-step--feedback")}
+    </div>
+  </div>`;
+}
+
 document.addEventListener("DOMContentLoaded", () => start().catch(renderError));
 
 async function start() {
@@ -43,18 +67,19 @@ async function renderResearchPrototype() {
       <a class="back-link" href="./#research">Back to Game &amp; AI research overview</a>
       <p class="eyebrow">${escapeHtml(prototype.label)}</p>
       <h1>${escapeHtml(prototype.title)}</h1>
+      <p class="research-working-title">${escapeHtml(prototype.workingTitle)}</p>
       <p class="hero-tagline">${escapeHtml(prototype.summary)}</p>
       <p class="research-supporting-statement">${escapeHtml(prototype.statusNote)}</p>
       <div class="source-document reveal">
         <button class="button ghost" type="button" id="source-document-toggle" aria-expanded="false" aria-controls="source-document-panel">View live source document</button>
         <div class="source-document-panel" id="source-document-panel" hidden>
           <iframe class="source-document-frame" data-src="${escapeAttribute(prototype.sourceDocument.embedUrl)}" title="Live source document: ${escapeAttribute(prototype.title)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          <p><a class="text-link" href="${escapeAttribute(prototype.sourceDocument.url)}" target="_blank" rel="noreferrer">Open in Google Docs</a></p>
+          <p><a class="text-link" href="${escapeAttribute(prototype.sourceDocument.url)}" target="_blank" rel="noopener noreferrer">Open in Google Docs</a></p>
         </div>
       </div>
     </section>
     ${conceptSections}
-    <section class="section-shell research-prototype-section"><div class="section-heading reveal"><p class="eyebrow">Proposed hybrid architecture</p><h2>From gameplay experience to a playable candidate.</h2></div><div class="pipeline-flow reveal research-prototype-flow">${prototype.architecture.map((step, index) => `<span class="flow-step">${escapeHtml(step)}</span>${index < prototype.architecture.length - 1 ? '<span class="flow-arrow" aria-hidden="true">→</span>' : ""}`).join("")}</div></section>
+    <section class="section-shell research-prototype-section"><div class="section-heading reveal"><p class="eyebrow">Proposed shared experience model</p><h2>One experience history, two connected outcomes.</h2></div><div class="reveal research-prototype-flow">${renderSharedExperienceFlow(prototype.flow)}</div></section>
     ${systemSections}
     <section class="content-band research-prototype-section"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">Research questions</p><h2>Questions the prototype could explore.</h2></div><div class="research-prototype-grid reveal">${prototype.researchQuestions.map((question, index) => `<article class="research-prototype-card"><p class="eyebrow">RQ${index + 1}</p><p>${escapeHtml(question)}</p></article>`).join("")}</div></div></section>
     <section class="section-shell research-prototype-section"><div class="section-heading reveal"><p class="eyebrow">Proposed comparison</p><h2>Three system configurations.</h2></div>${cardGrid(prototype.comparison)}<div class="research-prototype-copy reveal"><p>${escapeHtml(prototype.comparisonNote)}</p></div></section>
@@ -186,9 +211,10 @@ function renderResearch(research) {
   });
   setText("research-statement", research.statement);
   setText("research-project-title", research.direction.title);
+  setText("research-working-title", research.direction.workingTitle);
   setText("research-question", research.direction.question);
   setText("research-supporting-statement", research.direction.supportingStatement);
-  document.getElementById("research-flow").innerHTML = research.direction.steps.map((step, index) => `<span class="flow-step">${escapeHtml(step)}</span>${index < research.direction.steps.length - 1 ? '<span class="flow-arrow" aria-hidden="true">→</span>' : ""}`).join("");
+  document.getElementById("research-flow").innerHTML = renderSharedExperienceFlow(research.direction.flow);
   renderTags("research-approaches", research.direction.approaches);
   renderTags("research-evaluation", research.direction.evaluation);
 }
